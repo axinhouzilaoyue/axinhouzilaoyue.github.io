@@ -327,7 +327,7 @@
 </blockquote>
 <h2 id="实验步骤："><a href="#实验步骤：" class="headerlink" title="实验步骤："></a>实验步骤：</h2><ol>
 <li><p>从网上找到想要抓取的网页，这里使用<code>http://m.86pm25.com/city/beijing.html</code></p>
-<img src="E:\Desktop\QQ图片20200325102750.png" style="zoom:150%;" />
+<p><img src="https://gitee.com/axinhouzilaoyue/img/raw/master/img/QQ%E5%9B%BE%E7%89%8720200325102750.png" alt=""></p>
 </li>
 <li><p>终端登录到阿里云部署的centos，使用<strong>wget</strong>命令从网页获取数据</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[axin@iZ2zei0su36x4u74oamwhqZ ~]$ wget http:&#x2F;&#x2F;m.86pm25.com&#x2F;city&#x2F;beijing.html</span><br></pre></td></tr></table></figure>
@@ -341,10 +341,8 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[axin@iZ2zei0su36x4u74oamwhqZ ~]$ cat beijing.html | more</span><br></pre></td></tr></table></figure>
 
 <p><strong>beijing.html</strong>的文本内容部分展示：</p>
-<p><img src="E:%5CDesktop%5C%E9%9C%80%E6%B1%82%E6%95%B0%E6%8D%AE.png" alt=""></p>
+<p><img src="https://gitee.com/axinhouzilaoyue/img/raw/master/img/%E9%9C%80%E6%B1%82.png" alt=""></p>
 </li>
-</ol>
-<ol start="4">
 <li><p>使用<strong>awk</strong>命令将所需要的数据逐行筛选出来</p>
 <p><em>a.</em> 不难看出，需要的<strong><em>时间</em></strong>所在的行中有一个“<strong>更新：</strong>”，后面紧跟了此数据对应的日期“<strong>03-22 14:00</strong>”</p>
 <p>所需的<strong><em>地点、PM2.5浓度</em></strong>所在的行中含有“<strong>μg/m³</strong>”；</p>
@@ -385,7 +383,7 @@
 <li><p>将结果输出到<strong>03_22.csv</strong>文件，发送到本机，并使用Notepad++转码后用excel打开查看</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[axin@iZ2zei0su36x4u74oamwhqZ ~]$ cat beijing.html | awk -f bg1.awk | sed -e &#39;s&#x2F;&lt;[^&gt;]*&gt;&#x2F;&#x2F;g&#39; -e &#39;s&#x2F;更新：&#x2F; &#x2F;g&#39; -e &#39;s&#x2F;-&#x2F; &#x2F;g&#39; | awk -f bg2.awk &gt;03_22.csv</span><br></pre></td></tr></table></figure>
 
-<p><img src="E:%5CDesktop%5CQQ%E5%9B%BE%E7%89%8720200325114105.png" alt=""></p>
+<p><img src="https://gitee.com/axinhouzilaoyue/img/raw/master/img/%E7%BB%93%E6%9E%9C.png" alt=""></p>
 </li>
 </ol>
 <h2 id="实验总结："><a href="#实验总结：" class="headerlink" title="实验总结："></a>实验总结：</h2><p>通过本次实验，熟悉了<strong>awk、tr、sed</strong>命令的使用方法。尤其对awk命令有了更深的理解。</p>
