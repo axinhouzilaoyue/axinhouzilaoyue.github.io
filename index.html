@@ -172,6 +172,82 @@
             
 
   
+    <article id="post-Linux慕课测试不懂的题" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+  
+  
+    <h1 itemprop="name">
+	
+	  <a class="article-title" href="/2020/04/02/Linux%E6%85%95%E8%AF%BE%E6%B5%8B%E8%AF%95%E4%B8%8D%E6%87%82%E7%9A%84%E9%A2%98/" target="_blank">Linux慕课测试不懂的题</a>
+  
+    </h1>
+  
+
+
+  
+  
+<a href="/2020/04/02/Linux%E6%85%95%E8%AF%BE%E6%B5%8B%E8%AF%95%E4%B8%8D%E6%87%82%E7%9A%84%E9%A2%98/" class="archive-article-date">
+        <time datetime="2020-04-02T01:25:55.097Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-02</time>
+</a>
+
+  
+  
+    
+
+  
+  </header>
+  
+  <div class="article-entry" itemprop="articleBody">
+    
+    <h1 id="Linux慕课测试不懂的题"><a href="#Linux慕课测试不懂的题" class="headerlink" title="Linux慕课测试不懂的题"></a>Linux慕课测试不懂的题</h1><p>无论采用符号链接还是硬链接，都可以实现将只存储一份的数据文件同时加入到两个或两个以上不同目录中。<br>A.错<br>B.对<br>参考答案：B<br>解析：A是B的硬链接（A和B都是文件名），则A的目录项中的inode节点号与B的目录项中的inode节点号相同，即一个inode节点对应两个不同的文件名，两个文件名指向同一个文件，A和B对文件系统来说是完全平等的。如果删除了其中一个，对另外一个没有影响。每增加一个文件名，inode节点上的链接数增加一，每删除一个对应的文件名，inode节点上的链接数减一，直到为0，inode节点和对应的数据块被回收。<strong>注：文件和文件名是不同的东西，rm A删除的只是A这个文件名，而A对应的数据块（文件）只有在inode节点链接数减少为0的时候才会被系统回收。</strong></p>
+<p>Linux不允许对目录执行硬链接以构成更加灵活的网状目录组织方案，是因为文件系统的存储结构的局限性导致了这种现象的发生，目录组织被迫只能局限为树状层次结构。<br>A.对<br>B.错<br>参考答案：B<br>解析：linux系统中的硬连接有两个限制：不能跨越文件系统和不允许普通用户对目录作硬连接。至于第一个限制，很好理解，而第二个就不那么好理解了。我们对任何一个目录用ls -l 命令都可以看到其连接数至少是2，这也说明了系统中是存在硬连接的，而且命令ln -d 也可以让超级用户对目录作硬连接，这些都说明了系统限制对目录进行硬连接只是一个硬性规定，并不是逻辑上不允许或技术上的不可行。</p>
+
+    
+
+    
+
+    
+
+  </div>
+  <div class="article-info article-info-index">
+    
+    
+    
+
+    
+    <p class="article-more-link">
+      <a class="article-more-a" href="/2020/04/02/Linux%E6%85%95%E8%AF%BE%E6%B5%8B%E8%AF%95%E4%B8%8D%E6%87%82%E7%9A%84%E9%A2%98/">展开全文 >></a>
+    </p>
+    
+
+    
+    <div class="clearfix"></div>
+  </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-下一代Internet协议与技术课上练习" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
