@@ -172,93 +172,6 @@
             
 
   
-    <article id="post-Linux慕课测试不懂的题" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-  
-  
-    <h1 itemprop="name">
-	
-	  <a class="article-title" href="/2020/04/02/Linux%E6%85%95%E8%AF%BE%E6%B5%8B%E8%AF%95%E4%B8%8D%E6%87%82%E7%9A%84%E9%A2%98/" target="_blank">Linux慕课测试不懂的题</a>
-  
-    </h1>
-  
-
-
-  
-  
-<a href="/2020/04/02/Linux%E6%85%95%E8%AF%BE%E6%B5%8B%E8%AF%95%E4%B8%8D%E6%87%82%E7%9A%84%E9%A2%98/" class="archive-article-date">
-        <time datetime="2020-04-02T01:25:55.097Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-02</time>
-</a>
-
-  
-  
-    
-
-  
-  </header>
-  
-  <div class="article-entry" itemprop="articleBody">
-    
-    <h1 id="Linux慕课测试不懂的题"><a href="#Linux慕课测试不懂的题" class="headerlink" title="Linux慕课测试不懂的题"></a>Linux慕课测试不懂的题</h1><p>无论采用符号链接还是硬链接，都可以实现将只存储一份的数据文件同时加入到两个或两个以上不同目录中。<br>A.错<br>B.对<br>参考答案：B<br>解析：A是B的硬链接（A和B都是文件名），则A的目录项中的inode节点号与B的目录项中的inode节点号相同，即一个inode节点对应两个不同的文件名，两个文件名指向同一个文件，A和B对文件系统来说是完全平等的。如果删除了其中一个，对另外一个没有影响。每增加一个文件名，inode节点上的链接数增加一，每删除一个对应的文件名，inode节点上的链接数减一，直到为0，inode节点和对应的数据块被回收。<strong>注：文件和文件名是不同的东西，rm A删除的只是A这个文件名，而A对应的数据块（文件）只有在inode节点链接数减少为0的时候才会被系统回收。</strong></p>
-<p>Linux不允许对目录执行硬链接以构成更加灵活的网状目录组织方案，是因为文件系统的存储结构的局限性导致了这种现象的发生，目录组织被迫只能局限为树状层次结构。<br>A.对<br>B.错<br>参考答案：B<br>解析：linux系统中的硬连接有两个限制：不能跨越文件系统和不允许普通用户对目录作硬连接。至于第一个限制，很好理解，而第二个就不那么好理解了。我们对任何一个目录用ls -l 命令都可以看到其连接数至少是2，这也说明了系统中是存在硬连接的，而且命令ln -d 也可以让超级用户对目录作硬连接，这些都说明了系统限制对目录进行硬连接只是一个硬性规定，并不是逻辑上不允许或技术上的不可行。</p>
-
-    
-
-    
-
-    
-
-  </div>
-  <div class="article-info article-info-index">
-    
-    
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">linux</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-    
-
-    
-    <p class="article-more-link">
-      <a class="article-more-a" href="/2020/04/02/Linux%E6%85%95%E8%AF%BE%E6%B5%8B%E8%AF%95%E4%B8%8D%E6%87%82%E7%9A%84%E9%A2%98/">展开全文 >></a>
-    </p>
-    
-
-    
-    <div class="clearfix"></div>
-  </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
     <article id="post-下一代Internet协议与技术课上练习" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -292,38 +205,9 @@
 <li><h5 id="IPv6地址的类型包括（多选）"><a href="#IPv6地址的类型包括（多选）" class="headerlink" title="IPv6地址的类型包括（多选）"></a>IPv6地址的类型包括（多选）</h5><p>A 单播地址<br>B 多播地址<br>C 广播地址<br>D 任播地址<br>答案：</p>
 </li>
 </ol>
-<ol start="2">
-<li><h5 id="下列地址中仅在本链路范围内有效的目的地址包括（多选）"><a href="#下列地址中仅在本链路范围内有效的目的地址包括（多选）" class="headerlink" title="下列地址中仅在本链路范围内有效的目的地址包括（多选）"></a>下列地址中仅在本链路范围内有效的目的地址包括（多选）</h5><p>A FE80::5A76:12FF:FE34:3C2A<br>B FF02::1<br>C ::<br>D FF0E::2<br>答案：</p>
-</li>
-</ol>
-<ol start="3">
-<li><h5 id="下列哪种IPv6的自动配置方法不需要由DHCPv6服务器配置IPv6地址（多选）"><a href="#下列哪种IPv6的自动配置方法不需要由DHCPv6服务器配置IPv6地址（多选）" class="headerlink" title="下列哪种IPv6的自动配置方法不需要由DHCPv6服务器配置IPv6地址（多选）"></a>下列哪种IPv6的自动配置方法不需要由DHCPv6服务器配置IPv6地址（多选）</h5><p>A 无状态地址自动配置<br>B DHCPv6有状态自动分配<br>C DHCPv6无状态自动分配<br>D 链路本地地址自动配置<br>答案：</p>
-</li>
-</ol>
-<ol start="4">
-<li><h5 id="下列关于IPv6数据报格式的描述正确的是（多选）"><a href="#下列关于IPv6数据报格式的描述正确的是（多选）" class="headerlink" title="下列关于IPv6数据报格式的描述正确的是（多选）"></a>下列关于IPv6数据报格式的描述正确的是（多选）</h5><p>A IPv6的基本头标是固定长度<br>B IPv6路由器在处理IPv6数据报时不进行差错检测<br>C IPv6不支持可选功能<br>D IPv6路由器不能对数据报进行分片<br>答案：</p>
-</li>
-</ol>
-<ol start="5">
-<li><h5 id="下列关于IPv6数据报格式的描述正确的是（多选）-1"><a href="#下列关于IPv6数据报格式的描述正确的是（多选）-1" class="headerlink" title="下列关于IPv6数据报格式的描述正确的是（多选）"></a>下列关于IPv6数据报格式的描述正确的是（多选）</h5><p>A IPv6的基本头标是固定长度<br>B IPv6路由器在处理IPv6数据报时不进行差错检测<br>C IPv6不支持可选功能<br>D IPv6路由器不能对数据报进行分片<br>答案：</p>
-</li>
-</ol>
-<ol start="6">
-<li><h5 id="某IPv6数据分组包括：①IP基本首部，②TCP协议首部，③路由扩展首部，④分片首部，⑤逐跳选项扩展首部，请问这些首部在IP数据报中正确的排列顺序是"><a href="#某IPv6数据分组包括：①IP基本首部，②TCP协议首部，③路由扩展首部，④分片首部，⑤逐跳选项扩展首部，请问这些首部在IP数据报中正确的排列顺序是" class="headerlink" title="某IPv6数据分组包括：①IP基本首部，②TCP协议首部，③路由扩展首部，④分片首部，⑤逐跳选项扩展首部，请问这些首部在IP数据报中正确的排列顺序是"></a>某IPv6数据分组包括：①IP基本首部，②TCP协议首部，③路由扩展首部，④分片首部，⑤逐跳选项扩展首部，请问这些首部在IP数据报中正确的排列顺序是</h5><p>A ①②③④⑤<br>B ①⑤③④②<br>C ①⑤④③②<br>D ②①③④⑤<br>答案：B</p>
-</li>
-</ol>
-<ol start="7">
-<li><h5 id="下列关于IPv6分片扩展首部的描述正确的是（多选）"><a href="#下列关于IPv6分片扩展首部的描述正确的是（多选）" class="headerlink" title="下列关于IPv6分片扩展首部的描述正确的是（多选）"></a>下列关于IPv6分片扩展首部的描述正确的是（多选）</h5><p>A IPv6的基本首部属于不可分部分<br>B 紧跟在逐跳选项扩展首部后面的目的选项扩展首部属于不可分片部分<br>C 路由扩展首部一定属于不可分片部分<br>D 第一个目的选项扩展首部属于不可分片部分<br>答案：AC</p>
-</li>
-</ol>
-<ol start="8">
-<li><h5 id="下列关于IPv6与IPv4的描述错误的是（多选）"><a href="#下列关于IPv6与IPv4的描述错误的是（多选）" class="headerlink" title="下列关于IPv6与IPv4的描述错误的是（多选）"></a>下列关于IPv6与IPv4的描述错误的是（多选）</h5><p>A IPv4首部变长，支持可选功能；IPv6首部固定长，因此不支持可选功能<br>B IPv6中的UDP使用的检验和采用的是伪头标校验<br>C IPv6支持的最大数据报长度比IPv4大<br>D IPv6的分片功能一般在路由器上进行<br>答案：AD</p>
-<blockquote>
-<p>解析：C选项<br>IPv4有数据报长度TL(Total Length)字段，长度为16bits，因为IPv4数据报最大长度为2^16^ - 1 = ==65535字节==<br>IPv6<u>超大有效载荷</u>。在某些TCP/IP网络中（例如用于互连超级计算机的网络），由于正常的64KB的IP数据报大小限制，在传输大量数据时会导致不必要的开销。IPv6超大有效载荷选项指定了一种有效载荷大于普通MTU的IPv6数据报，称为超大报文。这个选项无法由MTU小于64KB的链路连接的节点来实现。超大有效载荷选项提供了一个==32位==的字段，用于携带有效载荷在65536~==4294967295字节==之间的数据报。当一个用于传输的超大报文形成时，其正常负载长度字段被设置为0。并且在上层协议（例如TCP）中使用Internet校验和算法应计算来自选项的长度值而不是基本头部中的长度字段值</p>
-</blockquote>
-</li>
-</ol>
-
+    
+    <a class="article-more-a" href="/2020/03/30/%E4%B8%8B%E4%B8%80%E4%BB%A3Internet%E5%8D%8F%E8%AE%AE%E4%B8%8E%E6%8A%80%E6%9C%AF%E8%AF%BE%E4%B8%8A%E7%BB%83%E4%B9%A0/#more">more >></a>
+    
     
 
     
@@ -339,6 +223,94 @@
     
     <p class="article-more-link">
       <a class="article-more-a" href="/2020/03/30/%E4%B8%8B%E4%B8%80%E4%BB%A3Internet%E5%8D%8F%E8%AE%AE%E4%B8%8E%E6%8A%80%E6%9C%AF%E8%AF%BE%E4%B8%8A%E7%BB%83%E4%B9%A0/">展开全文 >></a>
+    </p>
+    
+
+    
+    <div class="clearfix"></div>
+  </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-Linux慕课测试不懂的题" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+  
+  
+    <h1 itemprop="name">
+	
+	  <a class="article-title" href="/2020/03/26/Linux%E6%85%95%E8%AF%BE%E6%B5%8B%E8%AF%95%E4%B8%8D%E6%87%82%E7%9A%84%E9%A2%98/" target="_blank">essay</a>
+  
+    </h1>
+  
+
+
+  
+  
+<a href="/2020/03/26/Linux%E6%85%95%E8%AF%BE%E6%B5%8B%E8%AF%95%E4%B8%8D%E6%87%82%E7%9A%84%E9%A2%98/" class="archive-article-date">
+        <time datetime="2020-03-26T02:35:47.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-26</time>
+</a>
+
+  
+  
+    
+
+  
+  </header>
+  
+  <div class="article-entry" itemprop="articleBody">
+    
+    <h1 id="Linux慕课测试不懂的题"><a href="#Linux慕课测试不懂的题" class="headerlink" title="Linux慕课测试不懂的题"></a>Linux慕课测试不懂的题</h1><p>无论采用符号链接还是硬链接，都可以实现将只存储一份的数据文件同时加入到两个或两个以上不同目录中。<br>A.错<br>B.对<br>参考答案：B<br>解析：A是B的硬链接（A和B都是文件名），则A的目录项中的inode节点号与B的目录项中的inode节点号相同，即一个inode节点对应两个不同的文件名，两个文件名指向同一个文件，A和B对文件系统来说是完全平等的。如果删除了其中一个，对另外一个没有影响。每增加一个文件名，inode节点上的链接数增加一，每删除一个对应的文件名，inode节点上的链接数减一，直到为0，inode节点和对应的数据块被回收。<strong>注：文件和文件名是不同的东西，rm A删除的只是A这个文件名，而A对应的数据块（文件）只有在inode节点链接数减少为0的时候才会被系统回收。</strong></p>
+    
+    <a class="article-more-a" href="/2020/03/26/Linux%E6%85%95%E8%AF%BE%E6%B5%8B%E8%AF%95%E4%B8%8D%E6%87%82%E7%9A%84%E9%A2%98/#more">more >></a>
+    
+    
+
+    
+
+    
+
+  </div>
+  <div class="article-info article-info-index">
+    
+    
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">linux</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+    
+
+    
+    <p class="article-more-link">
+      <a class="article-more-a" href="/2020/03/26/Linux%E6%85%95%E8%AF%BE%E6%B5%8B%E8%AF%95%E4%B8%8D%E6%87%82%E7%9A%84%E9%A2%98/">展开全文 >></a>
     </p>
     
 
@@ -398,18 +370,9 @@
   <div class="article-entry" itemprop="articleBody">
     
     <center> <font size=20 color="red">axin</font> </center>
-
-<ul>
-<li>无论火气多大，只要稍稍只要right稍稍过上一段时间，原来的情绪大多数会逐渐减轻，就不再是怒<br>气，基本降到了“悲哀”或“遗憾”的水平。归于平静 </li>
-<li>那是个混账的年龄，你心里身体里都是爱，爱是浑身满心乱窜，给谁是不重要的   </li>
-<li>有些东西不过很久，是不可能理解的。有的东西等到理解了，又为时已晚。大多时候，我们不得不在尚未认清楚自己的内心的情况下选择行动，因而感到迷茫和困惑                 </li>
-<li>见一个爱一个的人，其实谁都不爱</li>
-<li>在世间，本就是各人下雪，各人有各人的隐晦和皎洁</li>
-<li>早餐店不会开到晚上，想吃的人早就来了</li>
-<li>凶手和恋人都喜欢事发后重返现场</li>
-<li>​                                                                                                                                                                                                                   </li>
-</ul>
-
+    
+    <a class="article-more-a" href="/2020/03/26/essay/#more">more >></a>
+    
     
 
     
@@ -504,77 +467,9 @@
 <li><p>电子邮件地址：<a href="mailto:1977494112@qq.com">1977494112@qq.com</a></p>
 </li>
 </ul>
-<h2 id="作业要求："><a href="#作业要求：" class="headerlink" title="作业要求："></a>作业要求：</h2><blockquote>
-<p><strong>从因特网上搜索 Web 页，用wget获取网页，处理网页html文本数据，从中提取出当前时间点北京各监测站的 据，从中提取出当前时间点北京各监测站的 据，从中提取出当前时间点北京各监测站的PM2.5 浓度，输出如下CSV格式数据。</strong><br>    2020 -03 -09 13:00:00, 海淀区万柳,73<br>    2020 -03 -09 13:00:00, 昌平镇,67<br>    2020 -03 -09 13:00:00, 奥体中心,66<br>    2020 -03 -09 13:00:00, 海淀区万柳,73<br>    2020 -03 -09 13:00:00, 昌平镇,73<br>    2020 -03 -09 13:00:00, 奥体中心,75<br><strong>撰写实验报告，要求 ：写出对数据的分析和处理思路，列出各个处理步骤并给出解释。提交的 Word 版本电子实验报告文件，请于3月26 日8:00 前在北邮爱课堂平台提交。文件的头部请给出 学号、 姓名、qq 群昵称和你的电子邮件地址。</strong></p>
-</blockquote>
-<h2 id="实验步骤："><a href="#实验步骤：" class="headerlink" title="实验步骤："></a>实验步骤：</h2><ol>
-<li><p>从网上找到想要抓取的网页，这里使用<code>http://m.86pm25.com/city/beijing.html</code></p>
-<p><img src="https://gitee.com/axinhouzilaoyue/img/raw/master/img/QQ%E5%9B%BE%E7%89%8720200325102750.png" alt=""></p>
-</li>
-<li><p>终端登录到阿里云部署的centos，使用<strong>wget</strong>命令从网页获取数据</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[axin@iZ2zei0su36x4u74oamwhqZ ~]$ wget http:&#x2F;&#x2F;m.86pm25.com&#x2F;city&#x2F;beijing.html</span><br></pre></td></tr></table></figure>
-
-
-
-</li>
-</ol>
-<ol start="3">
-<li><p>使用<strong>cat</strong>命令查看<strong>beijing.html</strong>的文本内容,找出所需信息的特征</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[axin@iZ2zei0su36x4u74oamwhqZ ~]$ cat beijing.html | more</span><br></pre></td></tr></table></figure>
-
-<p><strong>beijing.html</strong>的文本内容部分展示：</p>
-<p><img src="https://gitee.com/axinhouzilaoyue/img/raw/master/img/%E9%9C%80%E6%B1%82.png" alt=""></p>
-</li>
-<li><p>使用<strong>awk</strong>命令将所需要的数据逐行筛选出来</p>
-<p><em>a.</em> 不难看出，需要的<strong><em>时间</em></strong>所在的行中有一个“<strong>更新：</strong>”，后面紧跟了此数据对应的日期“<strong>03-22 14:00</strong>”</p>
-<p>所需的<strong><em>地点、PM2.5浓度</em></strong>所在的行中含有“<strong>μg/m³</strong>”；</p>
-<p><em>b.</em> 根据这些特征编写一个bg1.awk文件，内容如下：</p>
-<blockquote>
-<p>​        /更新：/{print $0;}<br>​        /μg/m³/{print $0;}</p>
-</blockquote>
-<p><em>c.</em> 执行awk命令如下，保留有用的信息所在的行： </p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[axin@iZ2zei0su36x4u74oamwhqZ ~]$ cat beijing.html | awk -f bg1.awk | more</span><br></pre></td></tr></table></figure>
-
-
-
-</li>
-</ol>
-<ol start="5">
-<li><p>使用<strong>sed</strong>命令，删除保留行中的无用数据</p>
-<p><em>a.</em> 将被 ‘<strong>&lt;</strong>‘ 和 ‘<strong>&gt;</strong>‘ 包裹的（包含它自身）内容全部替换为空字符</p>
-<p><em>b.</em> 将”<strong>更新：</strong>“替换为空格</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[axin@iZ2zei0su36x4u74oamwhqZ ~]$ cat beijing.html | awk -f bg1.awk | sed -e &#39;s&#x2F;&lt;[^&gt;]*&gt;&#x2F;&#x2F;g&#39; -e &#39;s&#x2F;更新：&#x2F; &#x2F;g&#39; -e &#39;s&#x2F;-&#x2F; &#x2F;g&#39; | more</span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p> 首要污染物：PM10 &nbsp;可正常活动 03 22 14:00  GetCurrentDateTime()<br> 奥体中心 62 良 26μg/m³<br> 昌平镇 49 优 27μg/m³<br> 定陵 41 优 24μg/m³<br> 东四 65 良 35μg/m³<br> 古城 55 良 29μg/m³<br> 官园 56 良 26μg/m³<br> 海淀区万柳 52 良 21μg/m³<br> 怀柔镇 34 优 21μg/m³<br> 农展馆 61 良 35μg/m³<br> 顺义新城 57 良 27μg/m³<br> 天坛 66 良 30μg/m³<br> 万寿西宫 66 良 31μg/m³ </p>
-</blockquote>
-</li>
-</ol>
-<ol start="6">
-<li><p>再次执行<strong>awk</strong>命令,格式化输出所需内容</p>
-<p>编写bg2.awk,内容如下：</p>
-<blockquote>
-<p>​        /GetCurrentDateTime()/{date=(“2020-“$3”-“$4” “$5”:00”);}<br>​        /μg/m³/{printf(“%s, %s,%d\n”),date,$1,$2;}</p>
-</blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[axin@iZ2zei0su36x4u74oamwhqZ ~]$ cat beijing.html | awk -f bg1.awk | sed -e &#39;s&#x2F;&lt;[^&gt;]*&gt;&#x2F;&#x2F;g&#39; -e &#39;s&#x2F;更新：&#x2F; &#x2F;g&#39; -e &#39;s&#x2F;-&#x2F; &#x2F;g&#39; | awk -f bg2.awk | more</span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p>2020-03-22 14:00:00, 奥体中心,62<br>2020-03-22 14:00:00, 昌平镇,49<br>2020-03-22 14:00:00, 定陵,41<br>2020-03-22 14:00:00, 东四,65<br>2020-03-22 14:00:00, 古城,55<br>2020-03-22 14:00:00, 官园,56<br>2020-03-22 14:00:00, 海淀区万柳,52<br>2020-03-22 14:00:00, 怀柔镇,34<br>2020-03-22 14:00:00, 农展馆,61<br>2020-03-22 14:00:00, 顺义新城,57<br>2020-03-22 14:00:00, 天坛,66<br>2020-03-22 14:00:00, 万寿西宫,66</p>
-</blockquote>
-</li>
-<li><p>将结果输出到<strong>03_22.csv</strong>文件，发送到本机，并使用Notepad++转码后用excel打开查看</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[axin@iZ2zei0su36x4u74oamwhqZ ~]$ cat beijing.html | awk -f bg1.awk | sed -e &#39;s&#x2F;&lt;[^&gt;]*&gt;&#x2F;&#x2F;g&#39; -e &#39;s&#x2F;更新：&#x2F; &#x2F;g&#39; -e &#39;s&#x2F;-&#x2F; &#x2F;g&#39; | awk -f bg2.awk &gt;03_22.csv</span><br></pre></td></tr></table></figure>
-
-<p><img src="https://gitee.com/axinhouzilaoyue/img/raw/master/img/%E7%BB%93%E6%9E%9C.png" alt=""></p>
-</li>
-</ol>
-<h2 id="实验总结："><a href="#实验总结：" class="headerlink" title="实验总结："></a>实验总结：</h2><p>通过本次实验，熟悉了<strong>awk、tr、sed</strong>命令的使用方法。尤其对awk命令有了更深的理解。</p>
-<p>在实践过程中发现.awk格式文件中，并没有对’<strong>+</strong>‘运算符重载，也就是并不支持两个字符串以<strong>“a”+”b”</strong>的形式进行连接。如果使用<strong>c = “a”+”b”</strong>这种形式，会将<strong>a、b</strong>先转为数字类型，然后进行加法，<strong>c</strong>的类型就会是一个数字；如果要实现字符串连接功能，形式如下：</p>
-<p>​        a = “123”</p>
-<p>​        b = “456”</p>
-<p>​        c = (ab)</p>
-<p>​        则 c 为”123456”</p>
-
+    
+    <a class="article-more-a" href="/2020/03/25/axin%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/#more">more >></a>
+    
     
 
     
@@ -649,19 +544,9 @@
   <div class="article-entry" itemprop="articleBody">
     
     <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
+    
+    <a class="article-more-a" href="/2020/03/25/hello-world/#more">more >></a>
+    
     
 
     
