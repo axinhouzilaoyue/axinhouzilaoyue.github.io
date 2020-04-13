@@ -18,7 +18,7 @@
 <meta property="og:description" content="下一代Internet协议与技术课上练习 IPv6地址的类型包括（多选）A 单播地址B 多播地址C 广播地址D 任播地址答案：">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-03-30T10:20:49.644Z">
-<meta property="article:modified_time" content="2020-04-07T13:08:30.953Z">
+<meta property="article:modified_time" content="2020-04-13T12:10:01.149Z">
 <meta property="article:author" content="houzilaoyue">
 <meta name="twitter:card" content="summary">
   
@@ -244,7 +244,7 @@
       <!-- 百度字体平台:http://fontstore.baidu.com/static/editor/index.html -->
       <i class="icon-statistics"></i>
       <span class="post-meta-item-text"> 字数统计:</span>
-      <span class="post-count">808字</span>
+      <span class="post-count">1.1k字</span>
     </span>
   </span>
 
@@ -253,7 +253,7 @@
     <span class="post-meta-item-icon">
       <i class="icon-book icon"></i>
       <span class="post-meta-item-text"> 阅读时长≈</span>
-      <span class="post-count">2分</span>
+      <span class="post-count">3分</span>
     </span>
   </span>
 </div>
@@ -300,6 +300,21 @@
 <p>解析：C选项<br>IPv4有数据报长度TL(Total Length)字段，长度为16bits，因为IPv4数据报最大长度为2^16^ - 1 = ==65535字节==<br>IPv6<u>超大有效载荷</u>。在某些TCP/IP网络中（例如用于互连超级计算机的网络），由于正常的64KB的IP数据报大小限制，在传输大量数据时会导致不必要的开销。IPv6超大有效载荷选项指定了一种有效载荷大于普通MTU的IPv6数据报，称为超大报文。这个选项无法由MTU小于64KB的链路连接的节点来实现。超大有效载荷选项提供了一个==32位==的字段，用于携带有效载荷在65536~==4294967295字节==之间的数据报。当一个用于传输的超大报文形成时，其正常负载长度字段被设置为0。并且在上层协议（例如TCP）中使用Internet校验和算法应计算来自选项的长度值而不是基本头部中的长度字段值</p>
 </blockquote>
 </li>
+</ol>
+<ol start="9">
+<li><h5 id="某主机发送一个IP数据报后，接收到“端口不可达”的ICMP差错报告消息，则下述描述正确的是（单选）"><a href="#某主机发送一个IP数据报后，接收到“端口不可达”的ICMP差错报告消息，则下述描述正确的是（单选）" class="headerlink" title="某主机发送一个IP数据报后，接收到“端口不可达”的ICMP差错报告消息，则下述描述正确的是（单选）"></a>某主机发送一个IP数据报后，接收到“端口不可达”的ICMP差错报告消息，则下述描述正确的是（单选）</h5><p>A 网络中某个路由器处拥塞，分组被丢弃<br>B 原始IP数据报的IP首部的“协议”域存在错误<br>C 原始IP数据报的“目的IP地址”域存在错误<br>D 原始IP数据报的上层协议的协议首部存在错误<br>答案：D</p>
+</li>
+</ol>
+<ol start="10">
+<li><h5 id="ICMPv6协议支持的功能包括（多选）"><a href="#ICMPv6协议支持的功能包括（多选）" class="headerlink" title="ICMPv6协议支持的功能包括（多选）"></a>ICMPv6协议支持的功能包括（多选）</h5><p>A 优化主机路由表<br>B 多播组成员管理<br>C 地址解析<br>D 网络节点之间连通性测试<br>E 源站选路<br>答案：ABCD</p>
+<blockquote>
+<p>宽松道的源站选路 (为数据报指定一系列必须经过的IP地址)<br>严格的源站选路（与宽松源站选路类似，但是要求只能经过这些指定的地址，不能经过其它地址）<br>源站选路是由IP协议实现的，并非ICMPv6</p>
+</blockquote>
+</li>
+</ol>
+<pre><code>严格的源站选路（与宽松源站选路类似，但是要求只能经过这些指定的地答址，不能经过其它地址）</code></pre><ol start="11">
+<li></li>
+<li></li>
 </ol>
 
     
@@ -420,7 +435,7 @@
 <nav id="article-nav">
   
   
-    <a href="/2020/03/26/Linux%E6%85%95%E8%AF%BE%E6%B5%8B%E8%AF%95%E4%B8%8D%E6%87%82%E7%9A%84%E9%A2%98/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2020/03/26/essay/" id="article-nav-older" class="article-nav-link-wrap">
       <div class="article-nav-title">essay</div>
       <i class="icon-circle-right"></i>
     </a>
@@ -604,11 +619,11 @@
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">linux</a>
+                <a href="javascript:void(0)" class="js-tag color3">摘抄</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">摘抄</a>
+                <a href="javascript:void(0)" class="js-tag color1">linux</a>
               </li>
             
             <div class="clearfix"></div>
