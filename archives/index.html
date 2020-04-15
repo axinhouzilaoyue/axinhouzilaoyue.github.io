@@ -82,6 +82,50 @@
       <p class="subtitle">能打败现实吗</p>
     
   </div>
+  
+  <div id="binft" style="font-size:30px"></div>
+  <script>
+    var binft = function (r) {
+      function t() {
+        return b[Math.floor(Math.random() * b.length)]
+      }  
+      function e() {
+        return String.fromCharCode(94 * Math.random() + 33)
+      }
+      function n(r) {
+        for (var n = document.createDocumentFragment(), i = 0; r > i; i++) {
+          var l = document.createElement("span");
+          l.textContent = e(), l.style.color = t(), n.appendChild(l)
+        }
+        return n
+      }
+      function i() {
+        var t = o[c.skillI];
+        c.step ? c.step-- : (c.step = g, c.prefixP < l.length ? (c.prefixP >= 0 && (c.text += l[c.prefixP]), c.prefixP++) : "forward" === c.direction ? c.skillP < t.length ? (c.text += t[c.skillP], c.skillP++) : c.delay ? c.delay-- : (c.direction = "backward", c.delay = a) : c.skillP > 0 ? (c.text = c.text.slice(0, -1), c.skillP--) : (c.skillI = (c.skillI + 1) % o.length, c.direction = "forward")), r.textContent = c.text, r.appendChild(n(c.prefixP < l.length ? Math.min(s, s + c.prefixP) : Math.min(s, t.length - c.skillP))), setTimeout(i, d)
+      }
+      var l = "",
+      o = ["见一个爱一个的人，其实谁都不爱", "在世间，本就是各人下雪，各人有各人的隐晦和皎洁","早餐店不会开到晚上，想吃的人早就来了", "凶手和恋人都喜欢事发后重返现场","洛中何郁郁，冠带自相索。","长衢罗夹巷，王侯多第宅。","两宫遥相望，双阙百余尺。","极宴娱心意，戚戚何所迫？"].map(function (r) {
+      return r + ""
+      }),
+      a = 2,
+      g = 1,
+      s = 5,
+      d = 75,
+      b = ["rgb(110,64,170)", "rgb(150,61,179)", "rgb(191,60,175)", "rgb(228,65,157)", "rgb(254,75,131)", "rgb(255,94,99)", "rgb(255,120,71)", "rgb(251,150,51)", "rgb(226,183,47)", "rgb(198,214,60)", "rgb(175,240,91)", "rgb(127,246,88)", "rgb(82,246,103)", "rgb(48,239,130)", "rgb(29,223,163)", "rgb(26,199,194)", "rgb(35,171,216)", "rgb(54,140,225)", "rgb(76,110,219)", "rgb(96,84,200)"],
+      c = {
+        text: "",
+        prefixP: -s,
+        skillI: 0,
+        skillP: 0,
+        direction: "forward",
+        delay: a,
+        step: g
+      };
+      i()
+      };
+      binft(document.getElementById('binft'));
+  </script>
+  
   <div class='b'>
     
       <div class="m_search">
@@ -97,55 +141,43 @@
           
             <li>
               <a class="nav home"
-                href="https://volantis.js.org/getting-started/"
+                href="https://axinhouzilaoyue.gitee.io/categories/"
                 
                 
-                id="https:volantisjsorggetting-started">
-                <i class='fas fa-book fa-fw'></i>文档
+                id="https:axinhouzilaoyuegiteeiocategories">
+                <i class='fas fa-folder-open fa-fw'></i>分类
               </a>
             </li>
           
             <li>
               <a class="nav home"
-                href="https://volantis.js.org/archives/"
+                href="https://axinhouzilaoyue.gitee.io/tags/"
                 
                 
-                id="https:volantisjsorgarchives">
-                <i class='fas fa-rss fa-fw'></i>博文
+                id="https:axinhouzilaoyuegiteeiotags">
+                <i class='fas fa-tags fa-fw'></i>标签
               </a>
             </li>
           
             <li>
               <a class="nav home"
-                href="https://volantis.js.org/examples/"
-                
-                
-                id="https:volantisjsorgexamples">
-                <i class='fas fa-play-circle fa-fw'></i>示例
-              </a>
-            </li>
-          
-            <li>
-              <a class="nav home"
-                href="https://github.com/xaoxuu/hexo-theme-volantis/"
-                
-                  rel="external nofollow noopener noreferrer"
+                href="https://axinhouzilaoyue.gitee.io/friends/"
                 
                 
                   target="_blank"
                 
-                id="https:githubcomxaoxuuhexo-theme-volantis">
-                <i class='fas fa-file-code fa-fw'></i>源码
+                id="https:axinhouzilaoyuegiteeiofriends">
+                <i class='fas fa-link fa-fw'></i>友链
               </a>
             </li>
           
             <li>
               <a class="nav home"
-                href="https://volantis.js.org/contributors/"
+                href="https://axinhouzilaoyue.gitee.io/me/"
                 
                 
-                id="https:volantisjsorgcontributors">
-                <i class='fas fa-handshake fa-fw'></i>鸣谢
+                id="https:axinhouzilaoyuegiteeiome">
+                <i class='fas fa-handshake fa-fw'></i>about me
               </a>
             </li>
           
@@ -441,7 +473,7 @@
 	          </div>
 	      
 	          <div class="archive-item archive-post mark">
-	            <a href="/2020/03/26/Linux%E6%85%95%E8%AF%BE%E6%B5%8B%E8%AF%95%E4%B8%8D%E6%87%82%E7%9A%84%E9%A2%98/">
+	            <a href="/2020/03/26/essay/">
 	              <time>03-26</time>
 	              <span class="title">
 	                
@@ -455,7 +487,7 @@
 	          </div>
 	      
 	          <div class="archive-item archive-post mark">
-	            <a href="/2020/03/26/essay/">
+	            <a href="/2020/03/26/Linux%E6%85%95%E8%AF%BE%E6%B5%8B%E8%AF%95%E4%B8%8D%E6%87%82%E7%9A%84%E9%A2%98/">
 	              <time>03-26</time>
 	              <span class="title">
 	                
@@ -537,7 +569,7 @@
           
         
           
-            <a href="https://music.163.com/#/playlist?id=780684159&userid=528355486"
+            <a href="https://music.163.com/#/user/home?id=528355486"
               class="social fas fa-headphones-alt flat-btn"
               target="_blank"
               rel="external nofollow noopener noreferrer">
@@ -626,7 +658,7 @@
             
           
             
-              <a href="https://music.163.com/#/playlist?id=780684159&amp;userid=528355486"
+              <a href="https://music.163.com/#/user/home?id=528355486"
                 class="social fas fa-headphones-alt flat-btn"
                 target="_blank"
                 rel="external nofollow noopener noreferrer">
