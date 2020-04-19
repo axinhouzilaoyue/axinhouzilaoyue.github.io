@@ -4,11 +4,37 @@
   
     
     <entry>
+      <title>折腾</title>
+      <link href="/2020/04/19/%E6%8A%98%E8%85%BE/"/>
+      <url>/2020/04/19/%E6%8A%98%E8%85%BE/</url>
+      
+        <content type="html"><![CDATA[<hr><h2 id="title-小白"><a href="#title-小白" class="headerlink" title="title:小白"></a>title:小白</h2><h3 id="组建个人NAS服务器"><a href="#组建个人NAS服务器" class="headerlink" title="组建个人NAS服务器"></a>组建个人NAS服务器</h3><!--read more--><h3 id="买一个显示屏，电脑双屏幕用"><a href="#买一个显示屏，电脑双屏幕用" class="headerlink" title="买一个显示屏，电脑双屏幕用"></a>买一个显示屏，电脑双屏幕用</h3>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>下一代Internet协议与技术课上练习</title>
       <link href="/2020/03/30/%E4%B8%8B%E4%B8%80%E4%BB%A3Internet%E5%8D%8F%E8%AE%AE%E4%B8%8E%E6%8A%80%E6%9C%AF%E8%AF%BE%E4%B8%8A%E7%BB%83%E4%B9%A0/"/>
       <url>/2020/03/30/%E4%B8%8B%E4%B8%80%E4%BB%A3Internet%E5%8D%8F%E8%AE%AE%E4%B8%8E%E6%8A%80%E6%9C%AF%E8%AF%BE%E4%B8%8A%E7%BB%83%E4%B9%A0/</url>
       
         <content type="html"><![CDATA[<h1 id="下一代Internet协议与技术课上练习"><a href="#下一代Internet协议与技术课上练习" class="headerlink" title="下一代Internet协议与技术课上练习"></a>下一代Internet协议与技术课上练习</h1><ol><li><h5 id="IPv6地址的类型包括（多选）"><a href="#IPv6地址的类型包括（多选）" class="headerlink" title="IPv6地址的类型包括（多选）"></a>IPv6地址的类型包括（多选）</h5><p>A 单播地址<br>B 多播地址<br>C 广播地址<br>D 任播地址<br>答案：ABD</p></li></ol><a id="more"></a>   <ol start="2"><li><h5 id="下列地址中仅在本链路范围内有效的目的地址包括（多选）"><a href="#下列地址中仅在本链路范围内有效的目的地址包括（多选）" class="headerlink" title="下列地址中仅在本链路范围内有效的目的地址包括（多选）"></a>下列地址中仅在本链路范围内有效的目的地址包括（多选）</h5><p>A FE80::5A76:12FF:FE34:3C2A<br>B FF02::1<br>C ::<br>D FF0E::2<br>答案：AB</p></li></ol><ol start="3"><li><h5 id="下列哪种IPv6的自动配置方法不需要由DHCPv6服务器配置IPv6地址（多选）"><a href="#下列哪种IPv6的自动配置方法不需要由DHCPv6服务器配置IPv6地址（多选）" class="headerlink" title="下列哪种IPv6的自动配置方法不需要由DHCPv6服务器配置IPv6地址（多选）"></a>下列哪种IPv6的自动配置方法不需要由DHCPv6服务器配置IPv6地址（多选）</h5><p>A 无状态地址自动配置<br>B DHCPv6有状态自动分配<br>C DHCPv6无状态自动分配<br>D 链路本地地址自动配置<br>答案：ACD</p></li></ol><ol start="4"><li><h5 id="下列关于IPv6数据报格式的描述正确的是（多选）"><a href="#下列关于IPv6数据报格式的描述正确的是（多选）" class="headerlink" title="下列关于IPv6数据报格式的描述正确的是（多选）"></a>下列关于IPv6数据报格式的描述正确的是（多选）</h5><p>A IPv6的基本头标是固定长度<br>B IPv6路由器在处理IPv6数据报时不进行差错检测<br>C IPv6不支持可选功能<br>D IPv6路由器不能对数据报进行分片<br>答案：ABD</p></li></ol><ol start="5"><li><h5 id="下列关于IPv6数据报格式的描述正确的是（多选）-1"><a href="#下列关于IPv6数据报格式的描述正确的是（多选）-1" class="headerlink" title="下列关于IPv6数据报格式的描述正确的是（多选）"></a>下列关于IPv6数据报格式的描述正确的是（多选）</h5><p>A IPv6的基本头标是固定长度<br>B IPv6路由器在处理IPv6数据报时不进行差错检测<br>C IPv6不支持可选功能<br>D IPv6路由器不能对数据报进行分片<br>答案：ABD</p></li></ol><ol start="6"><li><h5 id="某IPv6数据分组包括：①IP基本首部，②TCP协议首部，③路由扩展首部，④分片首部，⑤逐跳选项扩展首部，请问这些首部在IP数据报中正确的排列顺序是"><a href="#某IPv6数据分组包括：①IP基本首部，②TCP协议首部，③路由扩展首部，④分片首部，⑤逐跳选项扩展首部，请问这些首部在IP数据报中正确的排列顺序是" class="headerlink" title="某IPv6数据分组包括：①IP基本首部，②TCP协议首部，③路由扩展首部，④分片首部，⑤逐跳选项扩展首部，请问这些首部在IP数据报中正确的排列顺序是"></a>某IPv6数据分组包括：①IP基本首部，②TCP协议首部，③路由扩展首部，④分片首部，⑤逐跳选项扩展首部，请问这些首部在IP数据报中正确的排列顺序是</h5><p>A ①②③④⑤<br>B ①⑤③④②<br>C ①⑤④③②<br>D ②①③④⑤<br>答案：B</p></li></ol><ol start="7"><li><h5 id="下列关于IPv6分片扩展首部的描述正确的是（多选）"><a href="#下列关于IPv6分片扩展首部的描述正确的是（多选）" class="headerlink" title="下列关于IPv6分片扩展首部的描述正确的是（多选）"></a>下列关于IPv6分片扩展首部的描述正确的是（多选）</h5><p>A IPv6的基本首部属于不可分部分<br>B 紧跟在逐跳选项扩展首部后面的目的选项扩展首部属于不可分片部分<br>C 路由扩展首部一定属于不可分片部分<br>D 第一个目的选项扩展首部属于不可分片部分<br>答案：AC</p></li></ol><ol start="8"><li><h5 id="下列关于IPv6与IPv4的描述错误的是（多选）"><a href="#下列关于IPv6与IPv4的描述错误的是（多选）" class="headerlink" title="下列关于IPv6与IPv4的描述错误的是（多选）"></a>下列关于IPv6与IPv4的描述错误的是（多选）</h5><p>A IPv4首部变长，支持可选功能；IPv6首部固定长，因此不支持可选功能<br>B IPv6中的UDP使用的检验和采用的是伪头标校验<br>C IPv6支持的最大数据报长度比IPv4大<br>D IPv6的分片功能一般在路由器上进行<br>答案：AD</p><blockquote><p>解析：C选项<br>IPv4有数据报长度TL(Total Length)字段，长度为16bits，因为IPv4数据报最大长度为2^16^ - 1 = ==65535字节==<br>IPv6<u>超大有效载荷</u>。在某些TCP/IP网络中（例如用于互连超级计算机的网络），由于正常的64KB的IP数据报大小限制，在传输大量数据时会导致不必要的开销。IPv6超大有效载荷选项指定了一种有效载荷大于普通MTU的IPv6数据报，称为超大报文。这个选项无法由MTU小于64KB的链路连接的节点来实现。超大有效载荷选项提供了一个==32位==的字段，用于携带有效载荷在65536~==4294967295字节==之间的数据报。当一个用于传输的超大报文形成时，其正常负载长度字段被设置为0。并且在上层协议（例如TCP）中使用Internet校验和算法应计算来自选项的长度值而不是基本头部中的长度字段值</p></blockquote></li></ol><ol start="9"><li><h5 id="某主机发送一个IP数据报后，接收到“端口不可达”的ICMP差错报告消息，则下述描述正确的是（单选）"><a href="#某主机发送一个IP数据报后，接收到“端口不可达”的ICMP差错报告消息，则下述描述正确的是（单选）" class="headerlink" title="某主机发送一个IP数据报后，接收到“端口不可达”的ICMP差错报告消息，则下述描述正确的是（单选）"></a>某主机发送一个IP数据报后，接收到“端口不可达”的ICMP差错报告消息，则下述描述正确的是（单选）</h5><p>A 网络中某个路由器处拥塞，分组被丢弃<br>B 原始IP数据报的IP首部的“协议”域存在错误<br>C 原始IP数据报的“目的IP地址”域存在错误<br>D 原始IP数据报的上层协议的协议首部存在错误<br>答案：D</p></li></ol><ol start="10"><li><h5 id="ICMPv6协议支持的功能包括（多选）"><a href="#ICMPv6协议支持的功能包括（多选）" class="headerlink" title="ICMPv6协议支持的功能包括（多选）"></a>ICMPv6协议支持的功能包括（多选）</h5><p>A 优化主机路由表<br>B 多播组成员管理<br>C 地址解析<br>D 网络节点之间连通性测试<br>E 源站选路<br>答案：ABCD</p><blockquote><p>宽松道的源站选路 (为数据报指定一系列必须经过的IP地址)<br>严格的源站选路（与宽松源站选路类似，但是要求只能经过这些指定的地址，不能经过其它地址）<br>源站选路是由IP协议中路由扩展头标的功能，并非ICMPv6</p></blockquote></li></ol><ol start="11"><li></li><li></li></ol>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>essay</title>
+      <link href="/2020/03/26/essay/"/>
+      <url>/2020/03/26/essay/</url>
+      
+        <content type="html"><![CDATA[<hr><p>title:essay<br>tags:摘抄</p><hr><center> <font size=20 color="red">axin</font> </center><!-- read more --><ul><li>早餐店不会开到晚上，想吃的人早就来了</li><li>那是个混账的年龄，你心里身体里都是爱，爱是浑身满心乱窜，给谁是不重要的   </li><li>有些东西不过很久，是不可能理解的。有的东西等到理解了，又为时已晚。大多时候，我们不得不在尚未认清楚自己的内心的情况下选择行动，因而感到迷茫和困惑                 </li><li>见一个爱一个的人，其实谁都不爱</li><li>在世间，本就是各人下雪，各人有各人的隐晦和皎洁</li><li>无论火气多大，只要稍稍只要right稍稍过上一段时间，原来的情绪大多数会逐渐减轻，就不再是怒气，基本降到了“悲哀”或“遗憾”的水平。归于平静 </li><li>凶手和恋人都喜欢事发后重返现场</li><li>今天不想跑，所以才去跑，这是长距离跑者的思维方式</li><li>怕什么真理无穷，进一寸有一寸的欢喜</li><li>很多人不需要再见，因为只是路过而已。以往就是我们给彼此最好的纪念</li><li>曾经拥有的东西被夺走，不代表就会回到原来没有那种东西的时候</li><li>你以为很多事是可以重复的，还有下一次，但你错了。包括你儿时的万花筒或纸飞机，抄作业或买糖果，早就是此生的最后一次</li><li>​                                                                                                                                                                                                       </li></ul>]]></content>
       
       
       
@@ -28,25 +54,6 @@
         <tags>
             
             <tag> linux </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>essay</title>
-      <link href="/2020/03/26/essay/"/>
-      <url>/2020/03/26/essay/</url>
-      
-        <content type="html"><![CDATA[<center> <font size=20 color="red">axin</font> </center><a id="more"></a><ul><li>无论火气多大，只要稍稍只要right稍稍过上一段时间，原来的情绪大多数会逐渐减轻，就不再是怒<br>气，基本降到了“悲哀”或“遗憾”的水平。归于平静 </li><li>那是个混账的年龄，你心里身体里都是爱，爱是浑身满心乱窜，给谁是不重要的   </li><li>有些东西不过很久，是不可能理解的。有的东西等到理解了，又为时已晚。大多时候，我们不得不在尚未认清楚自己的内心的情况下选择行动，因而感到迷茫和困惑                 </li><li>见一个爱一个的人，其实谁都不爱</li><li>在世间，本就是各人下雪，各人有各人的隐晦和皎洁</li><li>早餐店不会开到晚上，想吃的人早就来了</li><li>凶手和恋人都喜欢事发后重返现场</li><li>​                                                                                                                                                                                                                   </li></ul>]]></content>
-      
-      
-      
-        <tags>
-            
-            <tag> 摘抄 </tag>
             
         </tags>
       

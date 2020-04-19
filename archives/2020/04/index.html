@@ -18,7 +18,7 @@
 
   <!-- 页面元数据 -->
   
-    <title>Tag: 摘抄 - axin</title>
+    <title>Archive: 2020/4 - axin</title>
   
   
 
@@ -69,7 +69,127 @@
 
 <body>
   
-  <div id="loading-bar-wrapper">
+  <div class="cover-wrapper">
+    
+      <cover class='cover  half'>
+        <div class='cover-body'>
+  <div class='a'>
+    
+    
+      <p class="title">猴子捞月</p>
+    
+    
+      <p class="subtitle">能打败现实吗</p>
+    
+  </div>
+  
+  <div id="binft" style="font-size:30px"></div>
+  <script>
+    var binft = function (r) {
+      function t() {
+        return b[Math.floor(Math.random() * b.length)]
+      }  
+      function e() {
+        return String.fromCharCode(94 * Math.random() + 33)
+      }
+      function n(r) {
+        for (var n = document.createDocumentFragment(), i = 0; r > i; i++) {
+          var l = document.createElement("span");
+          l.textContent = e(), l.style.color = t(), n.appendChild(l)
+        }
+        return n
+      }
+      function i() {
+        var t = o[c.skillI];
+        c.step ? c.step-- : (c.step = g, c.prefixP < l.length ? (c.prefixP >= 0 && (c.text += l[c.prefixP]), c.prefixP++) : "forward" === c.direction ? c.skillP < t.length ? (c.text += t[c.skillP], c.skillP++) : c.delay ? c.delay-- : (c.direction = "backward", c.delay = a) : c.skillP > 0 ? (c.text = c.text.slice(0, -1), c.skillP--) : (c.skillI = (c.skillI + 1) % o.length, c.direction = "forward")), r.textContent = c.text, r.appendChild(n(c.prefixP < l.length ? Math.min(s, s + c.prefixP) : Math.min(s, t.length - c.skillP))), setTimeout(i, d)
+      }
+      var l = "",
+      o = ["见一个爱一个的人，其实谁都不爱", "在世间，本就是各人下雪，各人有各人的隐晦和皎洁","早餐店不会开到晚上，想吃的人早就来了", "凶手和恋人都喜欢事发后重返现场","洛中何郁郁，冠带自相索。","长衢罗夹巷，王侯多第宅。","两宫遥相望，双阙百余尺。","极宴娱心意，戚戚何所迫？"].map(function (r) {
+      return r + ""
+      }),
+      a = 2,
+      g = 1,
+      s = 5,
+      d = 75,
+      b = ["rgb(110,64,170)", "rgb(150,61,179)", "rgb(191,60,175)", "rgb(228,65,157)", "rgb(254,75,131)", "rgb(255,94,99)", "rgb(255,120,71)", "rgb(251,150,51)", "rgb(226,183,47)", "rgb(198,214,60)", "rgb(175,240,91)", "rgb(127,246,88)", "rgb(82,246,103)", "rgb(48,239,130)", "rgb(29,223,163)", "rgb(26,199,194)", "rgb(35,171,216)", "rgb(54,140,225)", "rgb(76,110,219)", "rgb(96,84,200)"],
+      c = {
+        text: "",
+        prefixP: -s,
+        skillI: 0,
+        skillP: 0,
+        direction: "forward",
+        delay: a,
+        step: g
+      };
+      i()
+      };
+      binft(document.getElementById('binft'));
+  </script>
+  
+  <div class='b'>
+    
+      <div class="m_search">
+        <form name="searchform" class="form u-search-form">
+          <input type="text" class="input u-search-input" placeholder="" />
+          <i class="icon fas fa-search fa-fw"></i>
+        </form>
+      </div>
+    
+    <div class='menu navigation'>
+      <ul class='cover-list-h'>
+        
+          
+            <li>
+              <a class="nav home"
+                href="https://axinhouzilaoyue.gitee.io/categories/"
+                
+                
+                id="https:axinhouzilaoyuegiteeiocategories">
+                <i class='fas fa-folder-open fa-fw'></i>分类
+              </a>
+            </li>
+          
+            <li>
+              <a class="nav home"
+                href="https://axinhouzilaoyue.gitee.io/tags/"
+                
+                
+                id="https:axinhouzilaoyuegiteeiotags">
+                <i class='fas fa-tags fa-fw'></i>标签
+              </a>
+            </li>
+          
+            <li>
+              <a class="nav home"
+                href="https://axinhouzilaoyue.gitee.io/friends/"
+                
+                
+                  target="_blank"
+                
+                id="https:axinhouzilaoyuegiteeiofriends">
+                <i class='fas fa-link fa-fw'></i>友链
+              </a>
+            </li>
+          
+            <li>
+              <a class="nav home"
+                href="https://axinhouzilaoyue.gitee.io/me/"
+                
+                
+                id="https:axinhouzilaoyuegiteeiome">
+                <i class='fas fa-handshake fa-fw'></i>about me
+              </a>
+            </li>
+          
+        
+      </ul>
+    </div>
+  </div>
+</div>
+
+      </cover>
+    
+    <div id="loading-bar-wrapper">
   <div id="loading-bar"></div>
 </div>
 <header class="l_header shadow blur">
@@ -322,17 +442,16 @@
 
 <script>setLoadingBarProgress(40);</script>
 
+  </div>
 
 
-  <div class="l_body nocover">
+  <div class="l_body">
     <div class='body-wrapper'>
       
 
-
 <div class='l_main'>
-  
-    
-      
+	
+		
   <section class="post-list ">
     
       
@@ -357,8 +476,8 @@
         
           
   <h2 class="title">
-    <a href="/2020/03/26/essay/">
-      essay
+    <a href="/2020/04/19/%E6%8A%98%E8%85%BE/">
+      折腾
     </a>
   </h2>
 
@@ -388,7 +507,7 @@
               <div class="new-meta-item date">
   <a class='notlink'>
     <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>
-    <p>发布于：Mar 26, 2020</p>
+    <p>发布于：Apr 19, 2020</p>
   </a>
 </div>
 
@@ -416,16 +535,13 @@
   <section class="article typo">
     <div class="article-entry" itemprop="articleBody">
       
-        <center> <font size=20 color="red">axin</font> </center>
+        <hr>
+<h2 id="title-小白"><a href="#title-小白" class="headerlink" title="title:小白"></a>title:小白</h2><h3 id="组建个人NAS服务器"><a href="#组建个人NAS服务器" class="headerlink" title="组建个人NAS服务器"></a>组建个人NAS服务器</h3><!--read more-->
+
+<h3 id="买一个显示屏，电脑双屏幕用"><a href="#买一个显示屏，电脑双屏幕用" class="headerlink" title="买一个显示屏，电脑双屏幕用"></a>买一个显示屏，电脑双屏幕用</h3>
       
     </div>
     
-      
-        <div class="button readmore">
-          <a href="/2020/03/26/essay/">
-            Read More <i class="fas fa-chevron-right"></i>
-          </a>
-        </div>
       
     
   </section>
@@ -445,8 +561,7 @@
   
 
 
-    
-  
+	
 </div>
 <aside class='l_side'>
   
@@ -520,7 +635,7 @@
 
 
     <div class='content'>
-      <a href="/tags/linux/" style="font-size: 14px; color: #999">linux</a> <a href="/tags/%E6%91%98%E6%8A%84/" style="font-size: 14px; color: #999">摘抄</a>
+      <a href="/tags/linux/" style="font-size: 14px; color: #999">linux</a>
     </div>
   </section>
 
@@ -608,6 +723,14 @@
   </footer>
 
 <script>setLoadingBarProgress(80);</script>
+
+
+
+
+	<!-- 根据主题中的设置决定是否在archive中针对摘要部分的MathJax公式加载mathjax.js文件 -->
+	
+
+	
 
 
       <script>setLoadingBarProgress(60);</script>
