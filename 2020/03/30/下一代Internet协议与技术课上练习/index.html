@@ -455,13 +455,13 @@ IPv6地址的类型包括（多选）A 单播地址B 多播地址C 广播地址D
 <li><h5 id="下列关于邻居发现协议描述正确的是（多选）"><a href="#下列关于邻居发现协议描述正确的是（多选）" class="headerlink" title="下列关于邻居发现协议描述正确的是（多选）"></a>下列关于邻居发现协议描述正确的是（多选）</h5><p>A 邻居发现协议的跳数限制是255,因此可以在不同链路的多个路由器之间传输<br>B 邻居发现是ICMPv6协议的一部分，具有路由器发现和邻居发现功能<br>C 路由器公告消息的M=1，O=0，说明IPv6地址采用DHCPv6方式获得，其他网路配置参数    则不通过DHCPv6服务器获得<br>D 路由器公告消息的M=0，O=1，说明IPv6地址采用无状态自动配置，其他网路配置参数    通过DHCPv6服务器获得<br>答案：BD</p>
 <blockquote>
 <p>对于ND报文IPv6首部的“跳数限制”设置为255的理解：</p>
-<pre><code>***安全方面：其他链路没法通过ND进行攻击，因为其他链路的转发进来跳数就已经不是255了，没办法被识别为ND类型的数据报**
-***流量控制方面：将255以下的丢弃行为和ttl的丢弃行为做了区分；如果是0引起的丢弃，会引发ICMP报错，但是小于255的丢弃，不会产生额外的报错**</code></pre><p><img src="https://gitee.com/axinhouzilaoyue/img/raw/master/img/20200420220442.jpg" alt="NDtiao跳数限制255与流量控制的相关性"></p>
+<pre><code>**安全方面：**其他链路没法通过ND进行攻击，因为其他链路的转发进来跳数就已经不是255了，没办法被识别为ND类型的数据报
+**流量控制方面：**将255以下的丢弃行为和ttl的丢弃行为做了区分；如果是0引起的丢弃，会引发ICMP报错，但是小于255的丢弃，不会产生额外的报错</code></pre><p><img src="https://gitee.com/axinhouzilaoyue/img/raw/master/img/20200420220442.jpg" alt="NDtiao跳数限制255与流量控制的相关性"></p>
 <p>（此外，ND数据包只能在本链路传输，因此选项A错误）</p>
 </blockquote>
 </li>
 </ol>
-<pre><code>如果跳数限制初值设置成255，任何从其他链路来的数据包都不会是255，只要看到255就一定是ND报文，无需再做区分</code></pre><ol start="12">
+<ol start="12">
 <li><h5 id="使用邻居请求消息NS和邻居公告NA消息能够实现的功能是（多选，最多四项）"><a href="#使用邻居请求消息NS和邻居公告NA消息能够实现的功能是（多选，最多四项）" class="headerlink" title="使用邻居请求消息NS和邻居公告NA消息能够实现的功能是（多选，最多四项）"></a>使用邻居请求消息NS和邻居公告NA消息能够实现的功能是（多选，最多四项）</h5><p>A 地址解析<br>B 路由器发现<br>C 重复地址检测<br>D 邻居不可达检测<br>E 地址自动配置<br>F 地址重定向<br>答案：ACD</p>
 <blockquote>
 <p>NS/NA功能不包含路由器发现的原因：虽然NA中的R位可以表示该节点有无路由功能，但是如果发送NS节点没有路由邻居，则无法发现路由<br>（路由发现功能可以由RS/RA实现）</p>
@@ -561,7 +561,7 @@ IPv6地址的类型包括（多选）A 单播地址B 多播地址C 广播地址D
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-04-20T22:05:48+08:00">
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-04-20T22:12:39+08:00">
   <a class='notlink'>
     <i class="fas fa-edit fa-fw" aria-hidden="true"></i>
     <p>更新于：Apr 20, 2020</p>
