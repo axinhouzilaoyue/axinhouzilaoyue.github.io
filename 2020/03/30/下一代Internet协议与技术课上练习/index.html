@@ -452,6 +452,24 @@ IPv6地址的类型包括（多选）A 单播地址B 多播地址C 广播地址D
 </li>
 </ol>
 <ol start="11">
+<li><h5 id="下列关于邻居发现协议描述正确的是（多选）"><a href="#下列关于邻居发现协议描述正确的是（多选）" class="headerlink" title="下列关于邻居发现协议描述正确的是（多选）"></a>下列关于邻居发现协议描述正确的是（多选）</h5><p>A 邻居发现协议的跳数限制是255,因此可以在不同链路的多个路由器之间传输<br>B 邻居发现是ICMPv6协议的一部分，具有路由器发现和邻居发现功能<br>C 路由器公告消息的M=1，O=0，说明IPv6地址采用DHCPv6方式获得，其他网路配置参数    则不通过DHCPv6服务器获得<br>D 路由器公告消息的M=0，O=1，说明IPv6地址采用无状态自动配置，其他网路配置参数    通过DHCPv6服务器获得<br>答案：BD</p>
+<blockquote>
+<p>​    对于ND报文IPv6首部的“跳数限制”设置为255我的理解是：如果B链路上的某个包跳数限制为X ，经过n跳到A链路之后跳数限制变为X-n；<br>​    如果跳数限制初值设置成&lt;255的任何一个数，例如1，则B跳到A的数据包中总会有跳数限制为1的，但是它并不是ND报文。这样就增加了判断成本。<br>​    如果跳数限制初值设置成255，任何从其他链路来的数据包都不会是255，只要看到255就一定是ND报文，无需再做区分<br>​    <strong>*安全方面：其他链路没法通过ND进行攻击，因为其他链路的转发进来跳数就已经不是255了，没办法被识别为ND类型的数据报</strong></p>
+<p>（此外，ND数据包只能在本链路传输，因此选项A错误）</p>
+</blockquote>
+</li>
+</ol>
+<pre><code>如果跳数限制初值设置成255，任何从其他链路来的数据包都不会是255，只要看到255就一定是ND报文，无需再做区分</code></pre><ol start="12">
+<li><h5 id="使用邻居请求消息NS和邻居公告NA消息能够实现的功能是（多选，最多四项）"><a href="#使用邻居请求消息NS和邻居公告NA消息能够实现的功能是（多选，最多四项）" class="headerlink" title="使用邻居请求消息NS和邻居公告NA消息能够实现的功能是（多选，最多四项）"></a>使用邻居请求消息NS和邻居公告NA消息能够实现的功能是（多选，最多四项）</h5><p>A 地址解析<br>B 路由器发现<br>C 重复地址检测<br>D 邻居不可达检测<br>E 地址自动配置<br>F 地址重定向<br>答案：ACD</p>
+<blockquote>
+<p>NS/NA功能不包含路由器发现的原因：虽然NA中的R位可以表示该节点有无路由功能，但是如果发送NS节点没有路由邻居，则无法发现路由<br>（路由发现功能可以由RS/RA实现）</p>
+</blockquote>
+</li>
+</ol>
+<ol start="13">
+<li></li>
+<li></li>
+<li></li>
 <li></li>
 <li></li>
 </ol>
@@ -541,10 +559,10 @@ IPv6地址的类型包括（多选）A 单播地址B 多播地址C 广播地址D
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-04-13T20:34:04+08:00">
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-04-20T20:55:19+08:00">
   <a class='notlink'>
     <i class="fas fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：Apr 13, 2020</p>
+    <p>更新于：Apr 20, 2020</p>
   </a>
 </div>
 
@@ -698,7 +716,7 @@ title:小白组建个人NAS服务器
 
 
     <div class='content'>
-      <ol class="toc"><li class="toc-item toc-level-5"><a class="toc-link" href="#IPv6地址的类型包括（多选）"><span class="toc-text">IPv6地址的类型包括（多选）</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#下列地址中仅在本链路范围内有效的目的地址包括（多选）"><span class="toc-text">下列地址中仅在本链路范围内有效的目的地址包括（多选）</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#下列哪种IPv6的自动配置方法不需要由DHCPv6服务器配置IPv6地址（多选）"><span class="toc-text">下列哪种IPv6的自动配置方法不需要由DHCPv6服务器配置IPv6地址（多选）</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#下列关于IPv6数据报格式的描述正确的是（多选）"><span class="toc-text">下列关于IPv6数据报格式的描述正确的是（多选）</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#下列关于IPv6数据报格式的描述正确的是（多选）-1"><span class="toc-text">下列关于IPv6数据报格式的描述正确的是（多选）</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#某IPv6数据分组包括：①IP基本首部，②TCP协议首部，③路由扩展首部，④分片首部，⑤逐跳选项扩展首部，请问这些首部在IP数据报中正确的排列顺序是"><span class="toc-text">某IPv6数据分组包括：①IP基本首部，②TCP协议首部，③路由扩展首部，④分片首部，⑤逐跳选项扩展首部，请问这些首部在IP数据报中正确的排列顺序是</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#下列关于IPv6分片扩展首部的描述正确的是（多选）"><span class="toc-text">下列关于IPv6分片扩展首部的描述正确的是（多选）</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#下列关于IPv6与IPv4的描述错误的是（多选）"><span class="toc-text">下列关于IPv6与IPv4的描述错误的是（多选）</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#某主机发送一个IP数据报后，接收到“端口不可达”的ICMP差错报告消息，则下述描述正确的是（单选）"><span class="toc-text">某主机发送一个IP数据报后，接收到“端口不可达”的ICMP差错报告消息，则下述描述正确的是（单选）</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#ICMPv6协议支持的功能包括（多选）"><span class="toc-text">ICMPv6协议支持的功能包括（多选）</span></a></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-5"><a class="toc-link" href="#IPv6地址的类型包括（多选）"><span class="toc-text">IPv6地址的类型包括（多选）</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#下列地址中仅在本链路范围内有效的目的地址包括（多选）"><span class="toc-text">下列地址中仅在本链路范围内有效的目的地址包括（多选）</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#下列哪种IPv6的自动配置方法不需要由DHCPv6服务器配置IPv6地址（多选）"><span class="toc-text">下列哪种IPv6的自动配置方法不需要由DHCPv6服务器配置IPv6地址（多选）</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#下列关于IPv6数据报格式的描述正确的是（多选）"><span class="toc-text">下列关于IPv6数据报格式的描述正确的是（多选）</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#下列关于IPv6数据报格式的描述正确的是（多选）-1"><span class="toc-text">下列关于IPv6数据报格式的描述正确的是（多选）</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#某IPv6数据分组包括：①IP基本首部，②TCP协议首部，③路由扩展首部，④分片首部，⑤逐跳选项扩展首部，请问这些首部在IP数据报中正确的排列顺序是"><span class="toc-text">某IPv6数据分组包括：①IP基本首部，②TCP协议首部，③路由扩展首部，④分片首部，⑤逐跳选项扩展首部，请问这些首部在IP数据报中正确的排列顺序是</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#下列关于IPv6分片扩展首部的描述正确的是（多选）"><span class="toc-text">下列关于IPv6分片扩展首部的描述正确的是（多选）</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#下列关于IPv6与IPv4的描述错误的是（多选）"><span class="toc-text">下列关于IPv6与IPv4的描述错误的是（多选）</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#某主机发送一个IP数据报后，接收到“端口不可达”的ICMP差错报告消息，则下述描述正确的是（单选）"><span class="toc-text">某主机发送一个IP数据报后，接收到“端口不可达”的ICMP差错报告消息，则下述描述正确的是（单选）</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#ICMPv6协议支持的功能包括（多选）"><span class="toc-text">ICMPv6协议支持的功能包括（多选）</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#下列关于邻居发现协议描述正确的是（多选）"><span class="toc-text">下列关于邻居发现协议描述正确的是（多选）</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#使用邻居请求消息NS和邻居公告NA消息能够实现的功能是（多选，最多四项）"><span class="toc-text">使用邻居请求消息NS和邻居公告NA消息能够实现的功能是（多选，最多四项）</span></a></li></ol>
     </div>
   </section>
 
