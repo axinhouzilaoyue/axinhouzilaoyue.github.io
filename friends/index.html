@@ -5,8 +5,6 @@
   <!-- SEO相关 -->
   
     
-      <meta name="robots" content="noindex,follow">
-    
   
   <!-- 渲染优化 -->
   <meta name="renderer" content="webkit">
@@ -18,8 +16,10 @@
 
   <!-- 页面元数据 -->
   
-    <title>Archive - axin</title>
+    <title>我的朋友们 - axin</title>
   
+  
+    <meta name="description" content="这里写友链上方的内容。">
   
 
   <!-- feed -->
@@ -67,127 +67,7 @@
 
 <body>
   
-  <div class="cover-wrapper">
-    
-      <cover class='cover  half'>
-        <div class='cover-body'>
-  <div class='a'>
-    
-    
-      <p class="title">猴子捞月</p>
-    
-    
-      <p class="subtitle">能打败现实吗</p>
-    
-  </div>
-  
-  <div id="binft" style="font-size:30px"></div>
-  <script>
-    var binft = function (r) {
-      function t() {
-        return b[Math.floor(Math.random() * b.length)]
-      }  
-      function e() {
-        return String.fromCharCode(94 * Math.random() + 33)
-      }
-      function n(r) {
-        for (var n = document.createDocumentFragment(), i = 0; r > i; i++) {
-          var l = document.createElement("span");
-          l.textContent = e(), l.style.color = t(), n.appendChild(l)
-        }
-        return n
-      }
-      function i() {
-        var t = o[c.skillI];
-        c.step ? c.step-- : (c.step = g, c.prefixP < l.length ? (c.prefixP >= 0 && (c.text += l[c.prefixP]), c.prefixP++) : "forward" === c.direction ? c.skillP < t.length ? (c.text += t[c.skillP], c.skillP++) : c.delay ? c.delay-- : (c.direction = "backward", c.delay = a) : c.skillP > 0 ? (c.text = c.text.slice(0, -1), c.skillP--) : (c.skillI = (c.skillI + 1) % o.length, c.direction = "forward")), r.textContent = c.text, r.appendChild(n(c.prefixP < l.length ? Math.min(s, s + c.prefixP) : Math.min(s, t.length - c.skillP))), setTimeout(i, d)
-      }
-      var l = "",
-      o = ["见一个爱一个的人，其实谁都不爱", "在世间，本就是各人下雪，各人有各人的隐晦和皎洁","早餐店不会开到晚上，想吃的人早就来了", "凶手和恋人都喜欢事发后重返现场","洛中何郁郁，冠带自相索。","长衢罗夹巷，王侯多第宅。","两宫遥相望，双阙百余尺。","极宴娱心意，戚戚何所迫？"].map(function (r) {
-      return r + ""
-      }),
-      a = 2,
-      g = 1,
-      s = 5,
-      d = 75,
-      b = ["rgb(110,64,170)", "rgb(150,61,179)", "rgb(191,60,175)", "rgb(228,65,157)", "rgb(254,75,131)", "rgb(255,94,99)", "rgb(255,120,71)", "rgb(251,150,51)", "rgb(226,183,47)", "rgb(198,214,60)", "rgb(175,240,91)", "rgb(127,246,88)", "rgb(82,246,103)", "rgb(48,239,130)", "rgb(29,223,163)", "rgb(26,199,194)", "rgb(35,171,216)", "rgb(54,140,225)", "rgb(76,110,219)", "rgb(96,84,200)"],
-      c = {
-        text: "",
-        prefixP: -s,
-        skillI: 0,
-        skillP: 0,
-        direction: "forward",
-        delay: a,
-        step: g
-      };
-      i()
-      };
-      binft(document.getElementById('binft'));
-  </script>
-  
-  <div class='b'>
-    
-      <div class="m_search">
-        <form name="searchform" class="form u-search-form">
-          <input type="text" class="input u-search-input" placeholder="" />
-          <i class="icon fas fa-search fa-fw"></i>
-        </form>
-      </div>
-    
-    <div class='menu navigation'>
-      <ul class='cover-list-h'>
-        
-          
-            <li>
-              <a class="nav home"
-                href="https://axinhouzilaoyue.gitee.io/categories/"
-                
-                
-                id="https:axinhouzilaoyuegiteeiocategories">
-                <i class='fas fa-folder-open fa-fw'></i>分类
-              </a>
-            </li>
-          
-            <li>
-              <a class="nav home"
-                href="https://axinhouzilaoyue.gitee.io/tags/"
-                
-                
-                id="https:axinhouzilaoyuegiteeiotags">
-                <i class='fas fa-tags fa-fw'></i>标签
-              </a>
-            </li>
-          
-            <li>
-              <a class="nav home"
-                href="https://axinhouzilaoyue.gitee.io/friends/"
-                
-                
-                  target="_blank"
-                
-                id="https:axinhouzilaoyuegiteeiofriends">
-                <i class='fas fa-link fa-fw'></i>友链
-              </a>
-            </li>
-          
-            <li>
-              <a class="nav home"
-                href="https://axinhouzilaoyue.gitee.io/me/"
-                
-                
-                id="https:axinhouzilaoyuegiteeiome">
-                <i class='fas fa-handshake fa-fw'></i>about me
-              </a>
-            </li>
-          
-        
-      </ul>
-    </div>
-  </div>
-</div>
-
-      </cover>
-    
-    <div id="loading-bar-wrapper">
+  <div id="loading-bar-wrapper">
   <div id="loading-bar"></div>
 </div>
 <header class="l_header shadow blur">
@@ -440,230 +320,196 @@
 
 <script>setLoadingBarProgress(40);</script>
 
-  </div>
 
 
-  <div class="l_body">
+  <div class="l_body nocover">
     <div class='body-wrapper'>
       
 
 <div class='l_main'>
-	
-	  <article id="archive-page" class="post article white-box shadow">
-	    <section class="archive">
-	      
-	          <div class="archive-item archive-year mark">
-	            <h2>2020</h2>
-	          </div>
-	      
-	          <div class="archive-item archive-post mark">
-	            <a href="/2020/04/24/%E5%BF%83%E7%83%A6%E6%84%8F%E4%B9%B1/">
-	              <time>04-24</time>
-	              <span class="title">
-	                
-	                  心烦意乱
-	                
-	                
-									
-									
-	              </span>
-	            </a>
-	          </div>
-	      
-	          <div class="archive-item archive-post mark">
-	            <a href="/2020/04/19/%E6%8A%98%E8%85%BE/">
-	              <time>04-19</time>
-	              <span class="title">
-	                
-	                  小白
-	                
-	                
-									
-									
-	              </span>
-	            </a>
-	          </div>
-	      
-	          <div class="archive-item archive-post mark">
-	            <a href="/2020/03/30/%E4%B8%8B%E4%B8%80%E4%BB%A3Internet%E5%8D%8F%E8%AE%AE%E4%B8%8E%E6%8A%80%E6%9C%AF%E8%AF%BE%E4%B8%8A%E7%BB%83%E4%B9%A0/">
-	              <time>03-30</time>
-	              <span class="title">
-	                
-	                  下一代Internet协议与技术课上练习
-	                
-	                
-									
-									
-	              </span>
-	            </a>
-	          </div>
-	      
-	          <div class="archive-item archive-post mark">
-	            <a href="/2020/03/26/essay/">
-	              <time>03-26</time>
-	              <span class="title">
-	                
-	                  essay
-	                
-	                
-									
-									
-	              </span>
-	            </a>
-	          </div>
-	      
-	          <div class="archive-item archive-post mark">
-	            <a href="/2020/03/26/Linux%E6%85%95%E8%AF%BE%E6%B5%8B%E8%AF%95%E4%B8%8D%E6%87%82%E7%9A%84%E9%A2%98/">
-	              <time>03-26</time>
-	              <span class="title">
-	                
-	                  essay
-	                
-	                
-									
-									
-	              </span>
-	            </a>
-	          </div>
-	      
-	          <div class="archive-item archive-post mark">
-	            <a href="/2020/03/25/axin%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/">
-	              <time>03-25</time>
-	              <span class="title">
-	                
-	                  axin的第一篇博客文章
-	                
-	                
-									
-									
-	              </span>
-	            </a>
-	          </div>
-	      
-	          <div class="archive-item archive-post mark">
-	            <a href="/2020/03/25/hello-world/">
-	              <time>03-25</time>
-	              <span class="title">
-	                
-	                  Hello World
-	                
-	                
-									
-									
-	              </span>
-	            </a>
-	          </div>
-	      
-	    </section>
-	  </article>
-	
+  <article id="links" class="post white-box shadow article-type-links" itemscope itemprop="blogPost">
+    
+
+
+  <section class='meta'>
+    
+      
+      
+      <div class="meta" id="header-meta">
+        
+          
+  
+    <h1 class="title">
+      <a href="/friends/index.html">
+        我的朋友们
+      </a>
+    </h1>
+  
+
+
+        
+        <div class='new-meta-box'>
+          
+            
+          
+            
+              
+<div class='new-meta-item author'>
+  <a href="https://axinhouzilaoyue.gitee.io/" rel="nofollow">
+    <img src="https://gitee.com/axinhouzilaoyue/img/raw/master/img/20200414203229.jpg">
+    <p>axin</p>
+  </a>
+</div>
+
+            
+          
+            
+              
+
+            
+          
+            
+              <div class="new-meta-item date">
+  <a class='notlink'>
+    <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>
+    <p>发布于：Apr 24, 2020</p>
+  </a>
+</div>
+
+            
+          
+            
+              
+
+            
+          
+        </div>
+        
+          <hr>
+        
+      </div>
+    
+  </section>
+
+
+      <section class="article article-entry l_friends">
+        <p>这里写友链上方的内容。</p>
+        
+          
+            
+              <div class='friends-group'>
+                
+                  <br>
+                  <h3 class='friend-header'>
+                    
+                      <i class="fas fa-user-tie fa-fw" aria-hidden="true"></i>
+                    
+                    分组1
+                  </h3>
+                  
+                    <p>这个分组的描述</p>
+
+                  
+                
+                <div class='friend-content'>
+                  
+                    <a class='friend-card' style='background:#3E74C9; color:#fff'
+                      target="_blank" rel="external nofollow noopener noreferrer" href='/'>
+                      <div class='friend-left'>
+                        
+                      </div>
+                      <div class='friend-right'>
+                        <p class="friend-name"></p>
+                        
+                          <div class='friend-tags-wrapper'>
+                          
+                            <p class="tags"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i>标签1</p>
+                          
+                            <p class="tags"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i>标签2</p>
+                          
+                          </div>
+                        
+                        
+                          <div class='friend-tags-wrapper'>
+                            <p class="tags">描述文字</p>
+                          </div>
+                        
+                      </div>
+                    </a>
+                  
+                </div>
+              </div>
+            
+          
+            
+              <div class='friends-group'>
+                
+                  <br>
+                  <h3 class='friend-header'>
+                    
+                      <i class="fas fa-user-tie fa-fw" aria-hidden="true"></i>
+                    
+                    分组2
+                  </h3>
+                  
+                    <p>这个分组的描述</p>
+
+                  
+                
+                <div class='friend-content'>
+                  
+                    <a class='friend-card' style='background:#3E74C9; color:#fff'
+                      target="_blank" rel="external nofollow noopener noreferrer" href='/'>
+                      <div class='friend-left'>
+                        
+                      </div>
+                      <div class='friend-right'>
+                        <p class="friend-name"></p>
+                        
+                          <div class='friend-tags-wrapper'>
+                          
+                            <p class="tags"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i>标签1</p>
+                          
+                            <p class="tags"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i>标签2</p>
+                          
+                          </div>
+                        
+                        
+                          <div class='friend-tags-wrapper'>
+                            <p class="tags">描述文字</p>
+                          </div>
+                        
+                      </div>
+                    </a>
+                  
+                </div>
+              </div>
+            
+          
+        
+        <br><br>
+        <p>这里可以写友链页面下方的文字备注，例如自己的友链规范、示例等。</p>
+      </section>
+  </article>
+
+  <!-- 显示推荐文章和评论 -->
+
+
+
+  
+
+
+
 </div>
 <aside class='l_side'>
   
   
-    
-    
-
-<section class="widget blogger shadow desktop mobile">
-  <div class='content'>
-    
-      
-        <a class='avatar flat-box' href='/about/'>
-          <img no-lazy src='https://gitee.com/axinhouzilaoyue/img/raw/master/img/20200408193027.jpg'/>
-        </a>
-      
-    
-    
-      <div class='text'>
-        
-        
-        
-          <p><span id="jinrishici-sentence">axin</span></p>
-          <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
-        
-      </div>
-    
-    
-      <div class="social-wrapper">
-        
-          
-            <a href="https://github.com/axinhouzilaoyue"
-              class="social fab fa-github flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-            </a>
-          
-        
-          
-            <a href="https://music.163.com/#/user/home?id=528355486"
-              class="social fas fa-headphones-alt flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-            </a>
-          
-        
-      </div>
-    
-  </div>
-</section>
-
-  
 
   
     
     
-  
-
-  <section class="widget category shadow desktop">
-    
-  <header>
-    
-      <a href='/blog/categories/'><i class="fas fa-folder-open fa-fw" aria-hidden="true"></i><span class='name'>文章分类</span></a>
-    
-  </header>
 
 
-    <div class='content'>
-      <ul class="entry navigation">
-        
-          <li><a class="flat-box"
-            title="/categories/%E9%9A%8F%E4%BE%BF%E5%86%99%E5%86%99/" href="/categories/%E9%9A%8F%E4%BE%BF%E5%86%99%E5%86%99/"
-            id="categoriesE99A8FE4BEBFE58699E58699"
-            ><div class='name'>随便写写</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box child"
-            title="/categories/%E9%9A%8F%E4%BE%BF%E5%86%99%E5%86%99/%E6%91%98%E6%8A%84/" href="/categories/%E9%9A%8F%E4%BE%BF%E5%86%99%E5%86%99/%E6%91%98%E6%8A%84/"
-            id="categoriesE99A8FE4BEBFE58699E58699E69198E68A84"
-            ><div class='name'>摘抄</div><div class='badge'>(1)</div></a></li>
-        
-      </ul>
-    </div>
-  </section>
-
-
-  
-
-  
-    
-    
-  
-
-  <section class="widget tagcloud shadow desktop mobile">
-    
-  <header>
-    
-      <a href='/blog/tags/'><i class="fas fa-tags fa-fw" aria-hidden="true"></i><span class='name'>热门标签</span></a>
-    
-  </header>
-
-
-    <div class='content'>
-      <a href="/tags/linux/" style="font-size: 14px; color: #999">linux</a> <a href="/tags/%E6%91%98%E6%8A%84/" style="font-size: 14px; color: #999">摘抄</a>
-    </div>
-  </section>
-
-
-  
 
   
 
@@ -730,14 +576,6 @@
   </footer>
 
 <script>setLoadingBarProgress(80);</script>
-
-
-
-
-	<!-- 根据主题中的设置决定是否在archive中针对摘要部分的MathJax公式加载mathjax.js文件 -->
-	
-
-	
 
 
       <script>setLoadingBarProgress(60);</script>
