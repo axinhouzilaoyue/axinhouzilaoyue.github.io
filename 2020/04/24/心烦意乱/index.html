@@ -5,8 +5,6 @@
   <!-- SEO相关 -->
   
     
-      <meta name="robots" content="noindex,follow">
-    
   
   <!-- 渲染优化 -->
   <meta name="renderer" content="webkit">
@@ -18,8 +16,12 @@
 
   <!-- 页面元数据 -->
   
-    <title>Archive: 2020/4 - axin</title>
+    <title>心烦意乱 - axin</title>
   
+    <meta name="keywords" content="博客文章密码">
+  
+  
+    <meta name="description" content="不要猜密码">
   
 
   <!-- feed -->
@@ -69,127 +71,7 @@
 
 <body>
   
-  <div class="cover-wrapper">
-    
-      <cover class='cover  half'>
-        <div class='cover-body'>
-  <div class='a'>
-    
-    
-      <p class="title">猴子捞月</p>
-    
-    
-      <p class="subtitle">能打败现实吗</p>
-    
-  </div>
-  
-  <div id="binft" style="font-size:30px"></div>
-  <script>
-    var binft = function (r) {
-      function t() {
-        return b[Math.floor(Math.random() * b.length)]
-      }  
-      function e() {
-        return String.fromCharCode(94 * Math.random() + 33)
-      }
-      function n(r) {
-        for (var n = document.createDocumentFragment(), i = 0; r > i; i++) {
-          var l = document.createElement("span");
-          l.textContent = e(), l.style.color = t(), n.appendChild(l)
-        }
-        return n
-      }
-      function i() {
-        var t = o[c.skillI];
-        c.step ? c.step-- : (c.step = g, c.prefixP < l.length ? (c.prefixP >= 0 && (c.text += l[c.prefixP]), c.prefixP++) : "forward" === c.direction ? c.skillP < t.length ? (c.text += t[c.skillP], c.skillP++) : c.delay ? c.delay-- : (c.direction = "backward", c.delay = a) : c.skillP > 0 ? (c.text = c.text.slice(0, -1), c.skillP--) : (c.skillI = (c.skillI + 1) % o.length, c.direction = "forward")), r.textContent = c.text, r.appendChild(n(c.prefixP < l.length ? Math.min(s, s + c.prefixP) : Math.min(s, t.length - c.skillP))), setTimeout(i, d)
-      }
-      var l = "",
-      o = ["见一个爱一个的人，其实谁都不爱", "在世间，本就是各人下雪，各人有各人的隐晦和皎洁","早餐店不会开到晚上，想吃的人早就来了", "凶手和恋人都喜欢事发后重返现场","洛中何郁郁，冠带自相索。","长衢罗夹巷，王侯多第宅。","两宫遥相望，双阙百余尺。","极宴娱心意，戚戚何所迫？"].map(function (r) {
-      return r + ""
-      }),
-      a = 2,
-      g = 1,
-      s = 5,
-      d = 75,
-      b = ["rgb(110,64,170)", "rgb(150,61,179)", "rgb(191,60,175)", "rgb(228,65,157)", "rgb(254,75,131)", "rgb(255,94,99)", "rgb(255,120,71)", "rgb(251,150,51)", "rgb(226,183,47)", "rgb(198,214,60)", "rgb(175,240,91)", "rgb(127,246,88)", "rgb(82,246,103)", "rgb(48,239,130)", "rgb(29,223,163)", "rgb(26,199,194)", "rgb(35,171,216)", "rgb(54,140,225)", "rgb(76,110,219)", "rgb(96,84,200)"],
-      c = {
-        text: "",
-        prefixP: -s,
-        skillI: 0,
-        skillP: 0,
-        direction: "forward",
-        delay: a,
-        step: g
-      };
-      i()
-      };
-      binft(document.getElementById('binft'));
-  </script>
-  
-  <div class='b'>
-    
-      <div class="m_search">
-        <form name="searchform" class="form u-search-form">
-          <input type="text" class="input u-search-input" placeholder="" />
-          <i class="icon fas fa-search fa-fw"></i>
-        </form>
-      </div>
-    
-    <div class='menu navigation'>
-      <ul class='cover-list-h'>
-        
-          
-            <li>
-              <a class="nav home"
-                href="https://axinhouzilaoyue.gitee.io/categories/"
-                
-                
-                id="https:axinhouzilaoyuegiteeiocategories">
-                <i class='fas fa-folder-open fa-fw'></i>分类
-              </a>
-            </li>
-          
-            <li>
-              <a class="nav home"
-                href="https://axinhouzilaoyue.gitee.io/tags/"
-                
-                
-                id="https:axinhouzilaoyuegiteeiotags">
-                <i class='fas fa-tags fa-fw'></i>标签
-              </a>
-            </li>
-          
-            <li>
-              <a class="nav home"
-                href="https://axinhouzilaoyue.gitee.io/friends/"
-                
-                
-                  target="_blank"
-                
-                id="https:axinhouzilaoyuegiteeiofriends">
-                <i class='fas fa-link fa-fw'></i>友链
-              </a>
-            </li>
-          
-            <li>
-              <a class="nav home"
-                href="https://axinhouzilaoyue.gitee.io/me/"
-                
-                
-                id="https:axinhouzilaoyuegiteeiome">
-                <i class='fas fa-handshake fa-fw'></i>about me
-              </a>
-            </li>
-          
-        
-      </ul>
-    </div>
-  </div>
-</div>
-
-      </cover>
-    
-    <div id="loading-bar-wrapper">
+  <div id="loading-bar-wrapper">
   <div id="loading-bar"></div>
 </div>
 <header class="l_header shadow blur">
@@ -442,32 +324,18 @@
 
 <script>setLoadingBarProgress(40);</script>
 
-  </div>
 
 
-  <div class="l_body">
+  <div class="l_body nocover">
     <div class='body-wrapper'>
       
 
 <div class='l_main'>
-	
-		
-  <section class="post-list ">
-    
-      
-        
-          
-        
-          
-        
-      
-    
-    
-      
-        
-          <div class='post-wrapper'>
-            <article class="post white-box shadow reveal ">
   
+
+  
+    <article id="post" class="post white-box shadow article-type-post" itemscope itemprop="blogPost">
+      
 
 
   <section class='meta'>
@@ -477,11 +345,13 @@
       <div class="meta" id="header-meta">
         
           
-  <h2 class="title">
-    <a href="/2020/04/24/%E5%BF%83%E7%83%A6%E6%84%8F%E4%B9%B1/">
-      心烦意乱
-    </a>
-  </h2>
+  
+    <h1 class="title">
+      <a href="/2020/04/24/%E5%BF%83%E7%83%A6%E6%84%8F%E4%B9%B1/">
+        心烦意乱
+      </a>
+    </h1>
+  
 
 
         
@@ -520,11 +390,6 @@
 
             
           
-            
-              
-
-            
-          
         </div>
         
           <hr>
@@ -534,172 +399,57 @@
   </section>
 
 
-  <section class="article typo">
-    <div class="article-entry" itemprop="articleBody">
-      
-        不要猜密码
-      
-    </div>
-    
-      
-        <div class="button readmore">
-          <a href="/2020/04/24/%E5%BF%83%E7%83%A6%E6%84%8F%E4%B9%B1/">
-            Read More <i class="fas fa-chevron-right"></i>
-          </a>
-        </div>
-      
-    
-  </section>
-</article>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <article class="post white-box shadow reveal ">
-  
-
-
-  <section class='meta'>
-    
-      
-      
-      <div class="meta" id="header-meta">
-        
+      <section class="article typo">
+        <div class="article-entry" itemprop="articleBody">
           
-  <h2 class="title">
-    <a href="/2020/04/19/%E6%8A%98%E8%85%BE/">
-      小白
-    </a>
-  </h2>
-
-
-        
-        <div class='new-meta-box'>
-          
-            
-          
-            
-              
-<div class='new-meta-item author'>
-  <a href="https://axinhouzilaoyue.gitee.io/" rel="nofollow">
-    <img src="https://gitee.com/axinhouzilaoyue/img/raw/master/img/20200414203229.jpg">
-    <p>axin</p>
-  </a>
+          <div id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
+  <div class="hbe-input-container">
+  <input type="password" id="hbePass" placeholder="" />
+    <label for="hbePass">输入密码，查看文章</label>
+    <div class="bottom-line"></div>
+  </div>
+  <script id="hbeData" type="hbeData" data-hmacdigest="2747e559fdecc165c3929e2e3b213266b1fe76ae339408c19370b56739d1d074">bf295110b4d0ce01ab39f5ceee4addf8f66fbfa5357dc18609a0ed0a50cefe1431a7a202e4f2d3cb7a2279bf0e96176b55da187c24cf1abf6248a8e9144c1b70</script>
 </div>
-
-            
+<script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">
           
+            <br>
             
               
-
-            
-          
-            
-              <div class="new-meta-item date">
-  <a class='notlink'>
-    <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>
-    <p>发布于：Apr 19, 2020</p>
-  </a>
-</div>
-
-            
-          
-            
-              
-
-            
-          
-            
-              
-
-            
-          
-        </div>
-        
-          <hr>
-        
-      </div>
-    
-  </section>
-
-
-  <section class="article typo">
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="组建个人NAS服务器"><a href="#组建个人NAS服务器" class="headerlink" title="组建个人NAS服务器"></a>组建个人NAS服务器</h3><!--read more-->
-
-<h3 id="买一个显示屏，电脑双屏幕用"><a href="#买一个显示屏，电脑双屏幕用" class="headerlink" title="买一个显示屏，电脑双屏幕用"></a>买一个显示屏，电脑双屏幕用</h3>
-      
-    </div>
-    
-      
-    
-  </section>
-</article>
-
-          </div>
-        
-      
-    
-  </section>
-  
-    
-    <!-- 根据主题中的设置决定是否在archive中针对摘要部分的MathJax公式加载mathjax.js文件 -->
-    
-    
-
-  
-
-
-	
-</div>
-<aside class='l_side'>
-  
   
     
     
 
-<section class="widget blogger shadow desktop mobile">
+
+
+  
+
+  
+    
+    
+
+
+
+  
+
+  
+    
+    
+
+<section class="widget copyright  desktop mobile">
   <div class='content'>
     
-      
-        <a class='avatar flat-box' href='/about/'>
-          <img no-lazy src='https://gitee.com/axinhouzilaoyue/img/raw/master/img/20200408193027.jpg'/>
-        </a>
-      
-    
-    
-      <div class='text'>
-        
-        
-        
-          <p><span id="jinrishici-sentence">axin</span></p>
-          <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
-        
-      </div>
-    
-    
-      <div class="social-wrapper">
+      <blockquote>
         
           
-            <a href="https://github.com/axinhouzilaoyue"
-              class="social fab fa-github flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-            </a>
+            <p>博客内容遵循 署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</p>
+
           
         
           
-            <a href="https://music.163.com/#/user/home?id=528355486"
-              class="social fas fa-headphones-alt flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-            </a>
+            <p>本文链接：<a href=https://axinhouzilaoyue.gitee.io/2020/04/24/%E5%BF%83%E7%83%A6%E6%84%8F%E4%B9%B1/>https://axinhouzilaoyue.gitee.io/2020/04/24/%E5%BF%83%E7%83%A6%E6%84%8F%E4%B9%B1/</a></p>
           
         
-      </div>
+      </blockquote>
     
   </div>
 </section>
@@ -710,29 +460,166 @@
     
     
 
+<section class="widget qrcode  desktop mobile">
   
 
+  <div class='content article-entry'>
+    
+      
+        <div class='fancybox'><img src='https://gitee.com/axinhouzilaoyue/img/raw/master/img/20200414213200.jpg'
+        
+          height='64px'
+        ></div>
+      
+    
+      
+        <div class='fancybox'><img src='https://gitee.com/axinhouzilaoyue/img/raw/master/img/20200414213205.jpg'
+        
+          height='64px'
+        ></div>
+      
+    
+  </div>
+</section>
+
   
-    
-    
-  
-
-  <section class="widget tagcloud shadow desktop mobile">
-    
-  <header>
-    
-      <a href='/blog/tags/'><i class="fas fa-tags fa-fw" aria-hidden="true"></i><span class='name'>热门标签</span></a>
-    
-  </header>
 
 
-    <div class='content'>
-      <a href="/tags/linux/" style="font-size: 14px; color: #999">linux</a> <a href="/tags/%E6%91%98%E6%8A%84/" style="font-size: 14px; color: #999">摘抄</a>
+            
+          
+        </div>
+        
+          
+
+
+  <section class='meta' id="footer-meta">
+    <div class='new-meta-box'>
+      
+        
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-04-24T14:10:13+08:00">
+  <a class='notlink'>
+    <i class="fas fa-edit fa-fw" aria-hidden="true"></i>
+    <p>更新于：Apr 24, 2020</p>
+  </a>
+</div>
+
+        
+      
+        
+          
+
+        
+      
+        
+          
+
+        
+      
+        
+          
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
+    
+      
+        <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer"
+          
+          href="http://connect.qq.com/widget/shareqq/index.html?url=https://axinhouzilaoyue.gitee.io/2020/04/24/%E5%BF%83%E7%83%A6%E6%84%8F%E4%B9%B1/&title=心烦意乱 - axin&summary=不要猜密码"
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/logo/128/qq.png">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer"
+          
+          href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://axinhouzilaoyue.gitee.io/2020/04/24/%E5%BF%83%E7%83%A6%E6%84%8F%E4%B9%B1/&title=心烦意乱 - axin&summary=不要猜密码"
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/logo/128/qzone.png">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer"
+          
+          href="http://service.weibo.com/share/share.php?url=https://axinhouzilaoyue.gitee.io/2020/04/24/%E5%BF%83%E7%83%A6%E6%84%8F%E4%B9%B1/&title=心烦意乱 - axin&summary=不要猜密码"
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/logo/128/weibo.png">
+          
+        </a>
+      
+    
+  </div>
+</div>
+
+
+
+        
+      
     </div>
   </section>
 
 
+        
+        
+          <div class="prev-next">
+            
+            
+              <a class='next' href='/2020/04/19/%E6%8A%98%E8%85%BE/'>
+                <p class='title'>小白<i class="fas fa-chevron-right" aria-hidden="true"></i></p>
+                <p class='content'>组建个人NAS服务器
+
+买一个显示屏，电脑双屏幕用</p>
+              </a>
+            
+          </div>
+        
+      </section>
+    </article>
   
+
+  
+    <!-- 显示推荐文章和评论 -->
+
+
+
+  
+
+
+  
+
+
+
+
+<!-- 根据页面mathjax变量决定是否加载MathJax数学公式js -->
+
+
+
+  <script>
+    window.subData = {
+      title: '心烦意乱',
+      tools: true
+    }
+  </script>
+
+
+</div>
+<aside class='l_side'>
+  
+  
+
+  
+    
+    
+
+
 
   
 
@@ -815,14 +702,6 @@
   </footer>
 
 <script>setLoadingBarProgress(80);</script>
-
-
-
-
-	<!-- 根据主题中的设置决定是否在archive中针对摘要部分的MathJax公式加载mathjax.js文件 -->
-	
-
-	
 
 
       <script>setLoadingBarProgress(60);</script>
