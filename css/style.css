@@ -5205,3 +5205,6 @@ ul.list-v >li>a.active {
 .l_side .toc-wrapper:empty {
   display: none;
 }
+.backstretch {
+  opacity: 0.95;
+}

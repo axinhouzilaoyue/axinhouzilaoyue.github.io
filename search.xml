@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>essay</title>
+    <url>/2020/03/26/essay/</url>
+    <content><![CDATA[<center> <font size=20 color="red">axin</font> </center>
+
+<ul>
+<li><p>早餐店不会开到晚上，想吃的人早就来了</p>
+<a id="more"></a>
+</li>
+<li><p>那是个混账的年龄，你心里身体里都是爱，爱是浑身满心乱窜，给谁是不重要的   </p>
+</li>
+<li><p>有些东西不过很久，是不可能理解的。有的东西等到理解了，又为时已晚。大多时候，我们不得不在尚未认清楚自己的内心的情况下选择行动，因而感到迷茫和困惑                 </p>
+</li>
+<li><p>见一个爱一个的人，其实谁都不爱</p>
+</li>
+<li><p>在世间，本就是各人下雪，各人有各人的隐晦和皎洁</p>
+</li>
+<li><p>无论火气多大，只要稍稍过上一段时间，原来的情绪大多数会逐渐减轻，就不再是怒气，基本降到了“悲哀”或“遗憾”的水平。归于平静 </p>
+</li>
+<li><p>凶手和恋人都喜欢事发后重返现场</p>
+</li>
+<li><p>今天不想跑，所以才去跑，这是长距离跑者的思维方式</p>
+</li>
+<li><p>怕什么真理无穷，进一寸有一寸的欢喜</p>
+</li>
+<li><p>很多人不需要再见，因为只是路过而已。以往就是我们给彼此最好的纪念</p>
+</li>
+<li><p>曾经拥有的东西被夺走，不代表就会回到原来没有那种东西的时候</p>
+</li>
+<li><p>你以为很多事是可以重复的，还有下一次，但你错了。包括你儿时的万花筒或纸飞机，抄作业或买糖果，早就是此生的最后一次</p>
+</li>
+<li><p>“他到老都没有结婚。熟悉他的人都知道，他所爱的人的头衔和他车子的副座一样，任何人都不能碰，永远都是空着的。或者是，早已经被填满了。”<br>“他的许诺，他就算不敢相信，也总是记得牢牢的，当成宝贝一样藏在心里，觉得痛的时候，拿出来看一看，好像就没那么痛了。”《不可抗力》</p>
+</li>
+<li><p>​                                                                                                                                                     </p>
+</li>
+</ul>
+]]></content>
+      <tags>
+        <tag>摘抄</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>essay</title>
+    <url>/2020/03/26/Linux%E6%85%95%E8%AF%BE%E6%B5%8B%E8%AF%95%E4%B8%8D%E6%87%82%E7%9A%84%E9%A2%98/</url>
+    <content><![CDATA[<h1 id="Linux慕课测试不懂的题"><a href="#Linux慕课测试不懂的题" class="headerlink" title="Linux慕课测试不懂的题"></a>Linux慕课测试不懂的题</h1><p>无论采用符号链接还是硬链接，都可以实现将只存储一份的数据文件同时加入到两个或两个以上不同目录中。<br>A.错<br>B.对<br>参考答案：B<br>解析：A是B的硬链接（A和B都是文件名），则A的目录项中的inode节点号与B的目录项中的inode节点号相同，即一个inode节点对应两个不同的文件名，两个文件名指向同一个文件，A和B对文件系统来说是完全平等的。如果删除了其中一个，对另外一个没有影响。每增加一个文件名，inode节点上的链接数增加一，每删除一个对应的文件名，inode节点上的链接数减一，直到为0，inode节点和对应的数据块被回收。<strong>注：文件和文件名是不同的东西，rm A删除的只是A这个文件名，而A对应的数据块（文件）只有在inode节点链接数减少为0的时候才会被系统回收。</strong></p>
+<a id="more"></a>
+
+<p>Linux不允许对目录执行硬链接以构成更加灵活的网状目录组织方案，是因为文件系统的存储结构的局限性导致了这种现象的发生，目录组织被迫只能局限为树状层次结构。<br>A.对<br>B.错<br>参考答案：B<br>解析：linux系统中的硬连接有两个限制：不能跨越文件系统和不允许普通用户对目录作硬连接。至于第一个限制，很好理解，而第二个就不那么好理解了。我们对任何一个目录用ls -l 命令都可以看到其连接数至少是2，这也说明了系统中是存在硬连接的，而且命令ln -d 也可以让超级用户对目录作硬连接，这些都说明了系统限制对目录进行硬连接只是一个硬性规定，并不是逻辑上不允许或技术上的不可行。</p>
+]]></content>
+      <tags>
+        <tag>linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>axin的第一篇博客文章</title>
+    <url>/2020/03/25/axin%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/</url>
+    <content><![CDATA[<h1 id="上机作业-1：正则表达式应用"><a href="#上机作业-1：正则表达式应用" class="headerlink" title="上机作业 1：正则表达式应用"></a>上机作业 1：正则表达式应用</h1><ul>
+<li><p>学号：2017211336</p>
+</li>
+<li><p>姓名：刘凯鑫</p>
+</li>
+<li><p>qq群昵称：141刘凯鑫</p>
+</li>
+<li><p>电子邮件地址：<a href="mailto:1977494112@qq.com">1977494112@qq.com</a></p>
+</li>
+</ul>
+<a id="more"></a>
+
+<h2 id="作业要求："><a href="#作业要求：" class="headerlink" title="作业要求："></a>作业要求：</h2><blockquote>
+<p><strong>从因特网上搜索 Web 页，用wget获取网页，处理网页html文本数据，从中提取出当前时间点北京各监测站的 据，从中提取出当前时间点北京各监测站的 据，从中提取出当前时间点北京各监测站的PM2.5 浓度，输出如下CSV格式数据。</strong><br>    2020 -03 -09 13:00:00, 海淀区万柳,73<br>    2020 -03 -09 13:00:00, 昌平镇,67<br>    2020 -03 -09 13:00:00, 奥体中心,66<br>    2020 -03 -09 13:00:00, 海淀区万柳,73<br>    2020 -03 -09 13:00:00, 昌平镇,73<br>    2020 -03 -09 13:00:00, 奥体中心,75<br><strong>撰写实验报告，要求 ：写出对数据的分析和处理思路，列出各个处理步骤并给出解释。提交的 Word 版本电子实验报告文件，请于3月26 日8:00 前在北邮爱课堂平台提交。文件的头部请给出 学号、 姓名、qq 群昵称和你的电子邮件地址。</strong></p>
+</blockquote>
+<h2 id="实验步骤："><a href="#实验步骤：" class="headerlink" title="实验步骤："></a>实验步骤：</h2><ol>
+<li><p>从网上找到想要抓取的网页，这里使用<code>http://m.86pm25.com/city/beijing.html</code></p>
+<p><img src="https://gitee.com/axinhouzilaoyue/img/raw/master/img/QQ%E5%9B%BE%E7%89%8720200325102750.png" alt=""></p>
+</li>
+<li><p>终端登录到阿里云部署的centos，使用<strong>wget</strong>命令从网页获取数据</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[axin@iZ2zei0su36x4u74oamwhqZ ~]$ wget http:&#x2F;&#x2F;m.86pm25.com&#x2F;city&#x2F;beijing.html</span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ol>
+<ol start="3">
+<li><p>使用<strong>cat</strong>命令查看<strong>beijing.html</strong>的文本内容,找出所需信息的特征</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[axin@iZ2zei0su36x4u74oamwhqZ ~]$ cat beijing.html | more</span><br></pre></td></tr></table></figure>
+
+<p><strong>beijing.html</strong>的文本内容部分展示：</p>
+<p><img src="https://gitee.com/axinhouzilaoyue/img/raw/master/img/%E9%9C%80%E6%B1%82.png" alt=""></p>
+</li>
+<li><p>使用<strong>awk</strong>命令将所需要的数据逐行筛选出来</p>
+<p><em>a.</em> 不难看出，需要的<strong><em>时间</em></strong>所在的行中有一个“<strong>更新：</strong>”，后面紧跟了此数据对应的日期“<strong>03-22 14:00</strong>”</p>
+<p>所需的<strong><em>地点、PM2.5浓度</em></strong>所在的行中含有“<strong>μg/m³</strong>”；</p>
+<p><em>b.</em> 根据这些特征编写一个bg1.awk文件，内容如下：</p>
+<blockquote>
+<p>​        /更新：/{print $0;}<br>​        /μg/m³/{print $0;}</p>
+</blockquote>
+<p><em>c.</em> 执行awk命令如下，保留有用的信息所在的行： </p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[axin@iZ2zei0su36x4u74oamwhqZ ~]$ cat beijing.html | awk -f bg1.awk | more</span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ol>
+<ol start="5">
+<li><p>使用<strong>sed</strong>命令，删除保留行中的无用数据</p>
+<p><em>a.</em> 将被 ‘<strong>&lt;</strong>‘ 和 ‘<strong>&gt;</strong>‘ 包裹的（包含它自身）内容全部替换为空字符</p>
+<p><em>b.</em> 将”<strong>更新：</strong>“替换为空格</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[axin@iZ2zei0su36x4u74oamwhqZ ~]$ cat beijing.html | awk -f bg1.awk | sed -e &#39;s&#x2F;&lt;[^&gt;]*&gt;&#x2F;&#x2F;g&#39; -e &#39;s&#x2F;更新：&#x2F; &#x2F;g&#39; -e &#39;s&#x2F;-&#x2F; &#x2F;g&#39; | more</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p> 首要污染物：PM10 &nbsp;可正常活动 03 22 14:00  GetCurrentDateTime()<br> 奥体中心 62 良 26μg/m³<br> 昌平镇 49 优 27μg/m³<br> 定陵 41 优 24μg/m³<br> 东四 65 良 35μg/m³<br> 古城 55 良 29μg/m³<br> 官园 56 良 26μg/m³<br> 海淀区万柳 52 良 21μg/m³<br> 怀柔镇 34 优 21μg/m³<br> 农展馆 61 良 35μg/m³<br> 顺义新城 57 良 27μg/m³<br> 天坛 66 良 30μg/m³<br> 万寿西宫 66 良 31μg/m³ </p>
+</blockquote>
+</li>
+</ol>
+<ol start="6">
+<li><p>再次执行<strong>awk</strong>命令,格式化输出所需内容</p>
+<p>编写bg2.awk,内容如下：</p>
+<blockquote>
+<p>​        /GetCurrentDateTime()/{date=(“2020-“$3”-“$4” “$5”:00”);}<br>​        /μg/m³/{printf(“%s, %s,%d\n”),date,$1,$2;}</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[axin@iZ2zei0su36x4u74oamwhqZ ~]$ cat beijing.html | awk -f bg1.awk | sed -e &#39;s&#x2F;&lt;[^&gt;]*&gt;&#x2F;&#x2F;g&#39; -e &#39;s&#x2F;更新：&#x2F; &#x2F;g&#39; -e &#39;s&#x2F;-&#x2F; &#x2F;g&#39; | awk -f bg2.awk | more</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>2020-03-22 14:00:00, 奥体中心,62<br>2020-03-22 14:00:00, 昌平镇,49<br>2020-03-22 14:00:00, 定陵,41<br>2020-03-22 14:00:00, 东四,65<br>2020-03-22 14:00:00, 古城,55<br>2020-03-22 14:00:00, 官园,56<br>2020-03-22 14:00:00, 海淀区万柳,52<br>2020-03-22 14:00:00, 怀柔镇,34<br>2020-03-22 14:00:00, 农展馆,61<br>2020-03-22 14:00:00, 顺义新城,57<br>2020-03-22 14:00:00, 天坛,66<br>2020-03-22 14:00:00, 万寿西宫,66</p>
+</blockquote>
+</li>
+<li><p>将结果输出到<strong>03_22.csv</strong>文件，发送到本机，并使用Notepad++转码后用excel打开查看</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[axin@iZ2zei0su36x4u74oamwhqZ ~]$ cat beijing.html | awk -f bg1.awk | sed -e &#39;s&#x2F;&lt;[^&gt;]*&gt;&#x2F;&#x2F;g&#39; -e &#39;s&#x2F;更新：&#x2F; &#x2F;g&#39; -e &#39;s&#x2F;-&#x2F; &#x2F;g&#39; | awk -f bg2.awk &gt;03_22.csv</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://gitee.com/axinhouzilaoyue/img/raw/master/img/%E7%BB%93%E6%9E%9C.png" alt=""></p>
+</li>
+</ol>
+<h2 id="实验总结："><a href="#实验总结：" class="headerlink" title="实验总结："></a>实验总结：</h2><p>通过本次实验，熟悉了<strong>awk、tr、sed</strong>命令的使用方法。尤其对awk命令有了更深的理解。</p>
+<p>在实践过程中发现.awk格式文件中，并没有对’<strong>+</strong>‘运算符重载，也就是并不支持两个字符串以<strong>“a”+”b”</strong>的形式进行连接。如果使用<strong>c = “a”+”b”</strong>这种形式，会将<strong>a、b</strong>先转为数字类型，然后进行加法，<strong>c</strong>的类型就会是一个数字；如果要实现字符串连接功能，形式如下：</p>
+<p>​        a = “123”</p>
+<p>​        b = “456”</p>
+<p>​        c = (ab)</p>
+<p>​        则 c 为”123456”</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/2020/03/25/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+<a id="more"></a>
+
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>下一代Internet协议与技术课上练习</title>
+    <url>/2020/03/30/%E4%B8%8B%E4%B8%80%E4%BB%A3Internet%E5%8D%8F%E8%AE%AE%E4%B8%8E%E6%8A%80%E6%9C%AF%E8%AF%BE%E4%B8%8A%E7%BB%83%E4%B9%A0/</url>
+    <content><![CDATA[<h1 id="下一代Internet协议与技术课上练习"><a href="#下一代Internet协议与技术课上练习" class="headerlink" title="下一代Internet协议与技术课上练习"></a>下一代Internet协议与技术课上练习</h1><ol>
+<li><h5 id="IPv6地址的类型包括（多选）"><a href="#IPv6地址的类型包括（多选）" class="headerlink" title="IPv6地址的类型包括（多选）"></a>IPv6地址的类型包括（多选）</h5><p>A 单播地址<br>B 多播地址<br>C 广播地址<br>D 任播地址<br>答案：ABD</p>
+</li>
+</ol>
+<a id="more"></a>   
+
+<ol start="2">
+<li><h5 id="下列地址中仅在本链路范围内有效的目的地址包括（多选）"><a href="#下列地址中仅在本链路范围内有效的目的地址包括（多选）" class="headerlink" title="下列地址中仅在本链路范围内有效的目的地址包括（多选）"></a>下列地址中仅在本链路范围内有效的目的地址包括（多选）</h5><p>A FE80::5A76:12FF:FE34:3C2A<br>B FF02::1<br>C ::<br>D FF0E::2<br>答案：AB</p>
+</li>
+</ol>
+<ol start="3">
+<li><h5 id="下列哪种IPv6的自动配置方法不需要由DHCPv6服务器配置IPv6地址（多选）"><a href="#下列哪种IPv6的自动配置方法不需要由DHCPv6服务器配置IPv6地址（多选）" class="headerlink" title="下列哪种IPv6的自动配置方法不需要由DHCPv6服务器配置IPv6地址（多选）"></a>下列哪种IPv6的自动配置方法不需要由DHCPv6服务器配置IPv6地址（多选）</h5><p>A 无状态地址自动配置<br>B DHCPv6有状态自动分配<br>C DHCPv6无状态自动分配<br>D 链路本地地址自动配置<br>答案：ACD</p>
+</li>
+</ol>
+<ol start="4">
+<li><h5 id="下列关于IPv6数据报格式的描述正确的是（多选）"><a href="#下列关于IPv6数据报格式的描述正确的是（多选）" class="headerlink" title="下列关于IPv6数据报格式的描述正确的是（多选）"></a>下列关于IPv6数据报格式的描述正确的是（多选）</h5><p>A IPv6的基本头标是固定长度<br>B IPv6路由器在处理IPv6数据报时不进行差错检测<br>C IPv6不支持可选功能<br>D IPv6路由器不能对数据报进行分片<br>答案：ABD</p>
+</li>
+</ol>
+<ol start="5">
+<li><h5 id="下列关于IPv6数据报格式的描述正确的是（多选）-1"><a href="#下列关于IPv6数据报格式的描述正确的是（多选）-1" class="headerlink" title="下列关于IPv6数据报格式的描述正确的是（多选）"></a>下列关于IPv6数据报格式的描述正确的是（多选）</h5><p>A IPv6的基本头标是固定长度<br>B IPv6路由器在处理IPv6数据报时不进行差错检测<br>C IPv6不支持可选功能<br>D IPv6路由器不能对数据报进行分片<br>答案：ABD</p>
+</li>
+</ol>
+<ol start="6">
+<li><h5 id="某IPv6数据分组包括：①IP基本首部，②TCP协议首部，③路由扩展首部，④分片首部，⑤逐跳选项扩展首部，请问这些首部在IP数据报中正确的排列顺序是"><a href="#某IPv6数据分组包括：①IP基本首部，②TCP协议首部，③路由扩展首部，④分片首部，⑤逐跳选项扩展首部，请问这些首部在IP数据报中正确的排列顺序是" class="headerlink" title="某IPv6数据分组包括：①IP基本首部，②TCP协议首部，③路由扩展首部，④分片首部，⑤逐跳选项扩展首部，请问这些首部在IP数据报中正确的排列顺序是"></a>某IPv6数据分组包括：①IP基本首部，②TCP协议首部，③路由扩展首部，④分片首部，⑤逐跳选项扩展首部，请问这些首部在IP数据报中正确的排列顺序是</h5><p>A ①②③④⑤<br>B ①⑤③④②<br>C ①⑤④③②<br>D ②①③④⑤<br>答案：B</p>
+</li>
+</ol>
+<ol start="7">
+<li><h5 id="下列关于IPv6分片扩展首部的描述正确的是（多选）"><a href="#下列关于IPv6分片扩展首部的描述正确的是（多选）" class="headerlink" title="下列关于IPv6分片扩展首部的描述正确的是（多选）"></a>下列关于IPv6分片扩展首部的描述正确的是（多选）</h5><p>A IPv6的基本首部属于不可分部分<br>B 紧跟在逐跳选项扩展首部后面的目的选项扩展首部属于不可分片部分<br>C 路由扩展首部一定属于不可分片部分<br>D 第一个目的选项扩展首部属于不可分片部分<br>答案：AC</p>
+</li>
+</ol>
+<ol start="8">
+<li><h5 id="下列关于IPv6与IPv4的描述错误的是（多选）"><a href="#下列关于IPv6与IPv4的描述错误的是（多选）" class="headerlink" title="下列关于IPv6与IPv4的描述错误的是（多选）"></a>下列关于IPv6与IPv4的描述错误的是（多选）</h5><p>A IPv4首部变长，支持可选功能；IPv6首部固定长，因此不支持可选功能<br>B IPv6中的UDP使用的检验和采用的是伪头标校验<br>C IPv6支持的最大数据报长度比IPv4大<br>D IPv6的分片功能一般在路由器上进行<br>答案：AD</p>
+<blockquote>
+<p>解析：C选项<br>IPv4有数据报长度TL(Total Length)字段，长度为16bits，因为IPv4数据报最大长度为2^16^ - 1 = ==65535字节==<br>IPv6<u>超大有效载荷</u>。在某些TCP/IP网络中（例如用于互连超级计算机的网络），由于正常的64KB的IP数据报大小限制，在传输大量数据时会导致不必要的开销。IPv6超大有效载荷选项指定了一种有效载荷大于普通MTU的IPv6数据报，称为超大报文。这个选项无法由MTU小于64KB的链路连接的节点来实现。超大有效载荷选项提供了一个==32位==的字段，用于携带有效载荷在65536~==4294967295字节==之间的数据报。当一个用于传输的超大报文形成时，其正常负载长度字段被设置为0。并且在上层协议（例如TCP）中使用Internet校验和算法应计算来自选项的长度值而不是基本头部中的长度字段值</p>
+</blockquote>
+</li>
+</ol>
+<ol start="9">
+<li><h5 id="某主机发送一个IP数据报后，接收到“端口不可达”的ICMP差错报告消息，则下述描述正确的是（单选）"><a href="#某主机发送一个IP数据报后，接收到“端口不可达”的ICMP差错报告消息，则下述描述正确的是（单选）" class="headerlink" title="某主机发送一个IP数据报后，接收到“端口不可达”的ICMP差错报告消息，则下述描述正确的是（单选）"></a>某主机发送一个IP数据报后，接收到“端口不可达”的ICMP差错报告消息，则下述描述正确的是（单选）</h5><p>A 网络中某个路由器处拥塞，分组被丢弃<br>B 原始IP数据报的IP首部的“协议”域存在错误<br>C 原始IP数据报的“目的IP地址”域存在错误<br>D 原始IP数据报的上层协议的协议首部存在错误<br>答案：D</p>
+</li>
+</ol>
+<ol start="10">
+<li><h5 id="ICMPv6协议支持的功能包括（多选）"><a href="#ICMPv6协议支持的功能包括（多选）" class="headerlink" title="ICMPv6协议支持的功能包括（多选）"></a>ICMPv6协议支持的功能包括（多选）</h5><p>A 优化主机路由表<br>B 多播组成员管理<br>C 地址解析<br>D 网络节点之间连通性测试<br>E 源站选路<br>答案：ABCD</p>
+<blockquote>
+<p>宽松道的源站选路 (为数据报指定一系列必须经过的IP地址)<br>严格的源站选路（与宽松源站选路类似，但是要求只能经过这些指定的地址，不能经过其它地址）<br>源站选路是由IP协议中路由扩展头标的功能，并非ICMPv6</p>
+</blockquote>
+</li>
+</ol>
+<ol start="11">
+<li><h5 id="下列关于邻居发现协议描述正确的是（多选）"><a href="#下列关于邻居发现协议描述正确的是（多选）" class="headerlink" title="下列关于邻居发现协议描述正确的是（多选）"></a>下列关于邻居发现协议描述正确的是（多选）</h5><p>A 邻居发现协议的跳数限制是255,因此可以在不同链路的多个路由器之间传输<br>B 邻居发现是ICMPv6协议的一部分，具有路由器发现和邻居发现功能<br>C 路由器公告消息的M=1，O=0，说明IPv6地址采用DHCPv6方式获得，其他网路配置参数    则不通过DHCPv6服务器获得<br>D 路由器公告消息的M=0，O=1，说明IPv6地址采用无状态自动配置，其他网路配置参数    通过DHCPv6服务器获得<br>答案：BD</p>
+<blockquote>
+<p>对于ND报文IPv6首部的“跳数限制”设置为255的理解：<br><strong>安全方面：</strong>其他链路没法通过ND进行攻击，因为其他链路的转发进来跳数就已经不是255了，没办法被识别为ND类型的数据报<br><strong>流量控制方面：</strong>将255以下的丢弃行为和ttl的丢弃行为做了区分；如果是0引起的丢弃，会引发ICMP报错，但是小于255的丢弃，不会产生额外的报错<br><img src="https://gitee.com/axinhouzilaoyue/img/raw/master/img/20200420220442.jpg" alt="NDtiao跳数限制255与流量控制的相关性"></p>
+<p>（此外，ND数据包只能在本链路传输，因此选项A错误）</p>
+</blockquote>
+</li>
+</ol>
+<ol start="12">
+<li><h5 id="使用邻居请求消息NS和邻居公告NA消息能够实现的功能是（多选，最多四项）"><a href="#使用邻居请求消息NS和邻居公告NA消息能够实现的功能是（多选，最多四项）" class="headerlink" title="使用邻居请求消息NS和邻居公告NA消息能够实现的功能是（多选，最多四项）"></a>使用邻居请求消息NS和邻居公告NA消息能够实现的功能是（多选，最多四项）</h5><p>A 地址解析<br>B 路由器发现<br>C 重复地址检测<br>D 邻居不可达检测<br>E 地址自动配置<br>F 地址重定向<br>答案：ACD</p>
+<blockquote>
+<p>NS/NA功能不包含路由器发现的原因：虽然NA中的R位可以表示该节点有无路由功能，但是如果发送NS节点没有路由邻居，则无法发现路由<br>（路由发现功能可以由RS/RA实现）</p>
+</blockquote>
+</li>
+</ol>
+<ol start="13">
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+</ol>
+]]></content>
+  </entry>
+  <entry>
+    <title>心烦意乱</title>
+    <url>/2020/04/24/%E5%BF%83%E7%83%A6%E6%84%8F%E4%B9%B1/</url>
+    <content><![CDATA[<div id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
+  <div class="hbe-input-container">
+  <input type="password" id="hbePass" placeholder="" />
+    <label for="hbePass">输入密码，查看文章</label>
+    <div class="bottom-line"></div>
+  </div>
+  <script id="hbeData" type="hbeData" data-hmacdigest="2747e559fdecc165c3929e2e3b213266b1fe76ae339408c19370b56739d1d074">bf295110b4d0ce01ab39f5ceee4addf8f66fbfa5357dc18609a0ed0a50cefe1431a7a202e4f2d3cb7a2279bf0e96176b55da187c24cf1abf6248a8e9144c1b70</script>
+</div>
+<script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">]]></content>
+  </entry>
+  <entry>
+    <title>小白</title>
+    <url>/2020/04/19/%E6%8A%98%E8%85%BE/</url>
+    <content><![CDATA[<h3 id="组建个人NAS服务器"><a href="#组建个人NAS服务器" class="headerlink" title="组建个人NAS服务器"></a>组建个人NAS服务器</h3><!--read more-->
+
+<h3 id="买一个显示屏，电脑双屏幕用"><a href="#买一个显示屏，电脑双屏幕用" class="headerlink" title="买一个显示屏，电脑双屏幕用"></a>买一个显示屏，电脑双屏幕用</h3>]]></content>
+  </entry>
+</search>
